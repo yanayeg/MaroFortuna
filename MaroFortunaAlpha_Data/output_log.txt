@@ -14,15 +14,15 @@ Platform assembly: C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_D
 Loading C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.041 seconds
+- Completed reload, in  0.061 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\System.Core.dll (this message is harmless)
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.386597 ms
+UnloadTime: 0.656445 ms
 
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 153.
-Total: 0.147967 ms (FindLiveObjects: 0.012401 ms CreateObjectMapping: 0.008553 ms MarkObjects: 0.118031 ms  DeleteObjects: 0.008553 ms)
+Total: 0.189022 ms (FindLiveObjects: 0.015395 ms CreateObjectMapping: 0.012401 ms MarkObjects: 0.148822 ms  DeleteObjects: 0.010691 ms)
 
