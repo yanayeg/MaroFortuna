@@ -1,0 +1,28 @@
+Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
+    Vendor:   Intel
+    VRAM:     896 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.041 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\System.Core.dll (this message is harmless)
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.386597 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 153.
+Total: 0.147967 ms (FindLiveObjects: 0.012401 ms CreateObjectMapping: 0.008553 ms MarkObjects: 0.118031 ms  DeleteObjects: 0.008553 ms)
+
