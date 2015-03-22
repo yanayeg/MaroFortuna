@@ -3,7 +3,7 @@ using System.Collections;
 
 public class clickTile : MonoBehaviour 
 {
-	void OnMouseDown()
+	public void OnMouseDown()
 	{
 		Debug.Log ("Clicked a tile");
 	}
