@@ -5,7 +5,9 @@ public class IslandMenu : MonoBehaviour {
 
 	public bool clicked = false;
 	void DoWindow(int windowID) {
-		GUI.Button(new Rect(10, 30, 80, 20), "Click Me!");
+		if(GUI.Button(new Rect(10, 30, 80, 20), "Click Me!")){
+			clicked = false;
+		}
 		GUI.Button(new Rect(10, 60, 80, 20), "NOOOOO Me!");
 		GUI.Button(new Rect(10, 90, 80, 20), "Click Me!");
 		GUI.Button(new Rect(10, 120, 80, 20), "Click Me!");
