@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/JosephSceneBoi.unity
+    path: Assets/Scenes/MainMenu.unity
   - enabled: 1
-    path: Assets/Scenes/Quest1.unity
+    path: Assets/Scenes/MainGame.unity
