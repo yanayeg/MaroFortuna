@@ -1,11 +1,15 @@
 Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
-GfxDevice: creating device client; threaded=1
+GfxDevice: creating device client; threaded=0
+d3d11: failed to create D3D11 device (0x887a0004)
+GfxDevice: creating device client; threaded=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
-    Vendor:   Intel
-    VRAM:     896 MB
+    Version:  Direct3D 9.0c [vm3dum.dll 7.14.1.5026]
+    Renderer: VMware SVGA 3D
+    Vendor:   VMWare
+    VRAM:     832 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 NULL=0 RESZ=0 SlowINTZ=0
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 Platform assembly: C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\Assembly-CSharp.dll (this message is harmless)
@@ -14,15 +18,35 @@ Platform assembly: C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_D
 Loading C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.041 seconds
+- Completed reload, in  0.061 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+=======
+Platform assembly: \\vmware-host\Shared Folders\Craig\Documents\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading \\vmware-host\Shared Folders\Craig\Documents\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: \\vmware-host\Shared Folders\Craig\Documents\MaroFortuna\MaroFortunaAlpha_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading \\vmware-host\Shared Folders\Craig\Documents\MaroFortuna\MaroFortunaAlpha_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: \\vmware-host\Shared Folders\Craig\Documents\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading \\vmware-host\Shared Folders\Craig\Documents\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: \\vmware-host\Shared Folders\Craig\Documents\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading \\vmware-host\Shared Folders\Craig\Documents\MaroFortuna\MaroFortunaAlpha_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.338 seconds
+desktop: 1024x768 60Hz; virtual: 1024x768 at 0,0
+>>>>>>> origin/master
 <RI> Initializing input.
+XInput1_3.dll not found.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: C:\Users\Yana\Documents\GitHub\MaroFortuna\MaroFortunaAlpha_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: \\vmware-host\Shared Folders\Craig\Documents\MaroFortuna\MaroFortunaAlpha_Data\Managed\System.Core.dll (this message is harmless)
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.386597 ms
+<<<<<<< HEAD
+UnloadTime: 0.656445 ms
 
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 153.
-Total: 0.147967 ms (FindLiveObjects: 0.012401 ms CreateObjectMapping: 0.008553 ms MarkObjects: 0.118031 ms  DeleteObjects: 0.008553 ms)
+Total: 0.189022 ms (FindLiveObjects: 0.015395 ms CreateObjectMapping: 0.012401 ms MarkObjects: 0.148822 ms  DeleteObjects: 0.010691 ms)
+=======
+UnloadTime: 9.336102 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 150.
+Total: 5.648483 ms (FindLiveObjects: 0.019555 ms CreateObjectMapping: 0.010336 ms MarkObjects: 2.990882 ms  DeleteObjects: 2.621282 ms)
+>>>>>>> origin/master
 
