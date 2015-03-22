@@ -5,7 +5,15 @@ public class HELP : MonoBehaviour {
 
 	public bool doWindow0 = false;
 	void DoWindow0(int windowID) {
-		GUI.Button(new Rect(10, 30, 80, 20), "Click Me!");
+		// Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
+		if(GUI.Button(new Rect(20,40,200,20), "Save the Spy")) {
+			Application.LoadLevel("Quest1");
+		}
+		
+		// Make the second button.
+		if(GUI.Button(new Rect(20,70,200,20), "GET MONEY GET PAID")) {
+			Application.LoadLevel("Quest2");
+		}
 	}
 
 	// Use this for initialization
@@ -26,7 +34,7 @@ public class HELP : MonoBehaviour {
 	void OnGUI() {
 		//doWindow0 = GUI.Toggle(new Rect(10, 10, 100, 20), doWindow0, "Window 0");
 		if (doWindow0) {
-			GUI.Window (0, new Rect (110, 10, 200, 60), DoWindow0, "Basic Window");
+			GUI.Window (0, new Rect (110, 10, 250, 200), DoWindow0, "Quests");
 		}
 		
 	}
