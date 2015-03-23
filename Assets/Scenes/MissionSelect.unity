@@ -1511,7 +1511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6451be81e5c9c07458b7f2693d572e07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamCount: 0
+  lCount: 5
   mCount: 0
   sCount: 0
   dCount: 0
