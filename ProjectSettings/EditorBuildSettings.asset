@@ -4,12 +4,4 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-  - enabled: 0
-    path: Assets/Scenes/MainGame.unity
-  - enabled: 1
-    path: Assets/Scenes/JosephSceneBoi.unity
-  - enabled: 1
-    path: Assets/Scenes/Quest1.unity
+  m_Scenes: []
