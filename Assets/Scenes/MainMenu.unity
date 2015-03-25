@@ -529,6 +529,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78ebefda79e8f471e825754066130da8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadingImage: {fileID: 0}
+--- !u!1 &1737342687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1737342690}
+  - 114: {fileID: 1737342689}
+  - 114: {fileID: 1737342688}
+  m_Layer: 0
+  m_Name: GlobalScripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1737342688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737342687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b024a9ea8d478458eb2c84972d888832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1737342689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737342687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4140c4cff044b3aa0a7a74467c98b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profession1: 1
+  charName1: Jorts Bear
+  sprite1: {fileID: 174454, guid: b0cf12438f9c6402e868d170e47bf6b9, type: 2}
+  experience1: 0
+  status1: 1
+  description1: Rogue Cop, wearing Jorts.
+--- !u!4 &1737342690
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737342687}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
 --- !u!1 &2041410189
 GameObject:
   m_ObjectHideFlags: 0
