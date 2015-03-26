@@ -9,6 +9,7 @@ public class testTextScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+
 		string successDesc = Mission.successDescription.ToString();
 		Text guiText = GameObject.Find("Description").GetComponent<Text>();
 		guiText.text = successDesc;
