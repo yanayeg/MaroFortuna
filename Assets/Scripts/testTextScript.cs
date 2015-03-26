@@ -9,10 +9,13 @@ public class testTextScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		var AVariable = "FUCK UNITY";
-		Text guiText = GameObject.Find("successMessage").GetComponent<Text>();
-		guiText.text = AVariable;
-	
+		string successDesc = Mission.successDescription.ToString();
+		Text guiText = GameObject.Find("Description").GetComponent<Text>();
+		guiText.text = successDesc;
+
+		string outcome = "Success!";
+		Text guiText2 = GameObject.Find("successMessage").GetComponent<Text>();
+		guiText2.text = outcome;
 	}
 	
 	// Update is called once per frame
