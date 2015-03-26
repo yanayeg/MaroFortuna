@@ -7,12 +7,12 @@ public class HELP : MonoBehaviour {
 	void DoWindow0(int windowID) {
 		// Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
 		if(GUI.Button(new Rect(20,40,200,20), "Save the Spy")) {
-			Application.LoadLevel("Quest1");
+			Application.LoadLevel("MissionSelect");
 		}
 		
 		// Make the second button.
 		if(GUI.Button(new Rect(20,70,200,20), "GET MONEY GET PAID")) {
-			Application.LoadLevel("Quest2");
+			Application.LoadLevel("MissionSelect");
 		}
 		//Close the panel.
 		if (GUI.Button (new Rect (20,100,200,20), "Close")) {
