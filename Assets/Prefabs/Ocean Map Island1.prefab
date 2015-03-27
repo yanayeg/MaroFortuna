@@ -9,6 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 496902}
   - 212: {fileID: 21258950}
+  - 61: {fileID: 6149848}
+  - 114: {fileID: 11472548}
   m_Layer: 0
   m_Name: Ocean Map Island1
   m_TagString: Untagged
@@ -23,11 +25,36 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 40.7999992, y: 26.7000008, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &6149848
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104948}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 13.7399998, y: 14.1899996}
+--- !u!114 &11472548
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d80f8a14e0f6d419ca99cd3b2b5cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doWindow0: 0
 --- !u!212 &21258950
 SpriteRenderer:
   m_ObjectHideFlags: 1

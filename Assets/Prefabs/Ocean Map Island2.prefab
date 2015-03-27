@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 459836}
   - 212: {fileID: 21270170}
+  - 61: {fileID: 6110428}
   m_Layer: 0
   m_Name: Ocean Map Island2
   m_TagString: Untagged
@@ -23,11 +24,24 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 138498}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.2999992, y: 24.6000004, z: 0}
+  m_LocalPosition: {x: -42.2999992, y: 30.3999996, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &6110428
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138498}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 14.4099998, y: 14.6300001}
 --- !u!212 &21270170
 SpriteRenderer:
   m_ObjectHideFlags: 1
