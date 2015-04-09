@@ -537,8 +537,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1737342690}
-  - 114: {fileID: 1737342688}
   - 114: {fileID: 1737342689}
+  - 114: {fileID: 1737342688}
   m_Layer: 0
   m_Name: GlobalScripts
   m_TagString: Untagged
@@ -554,9 +554,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1737342687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b024a9ea8d478458eb2c84972d888832, type: 3}
+  m_Script: {fileID: 11500000, guid: e2bb972a4803442bb8063a8fa9e3b739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: 
+  description: 
+  successDescription: 
 --- !u!114 &1737342689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,6 +571,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd16ab2476e04fe0b25b35852ca3a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  profession: 0
+  charName: 
+  sprite: {fileID: 0}
+  experience: 0
+  status: 0
+  description: 
 --- !u!4 &1737342690
 Transform:
   m_ObjectHideFlags: 0

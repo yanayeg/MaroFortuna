@@ -4,8 +4,6 @@ using UnityEngine.UI;
 
 public class testTextScript : MonoBehaviour {
 
-
-
 	// Use this for initialization
 	void Start () {
 		
