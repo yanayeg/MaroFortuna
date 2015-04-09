@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System.Collections.Generic;
 public class HELP : MonoBehaviour {
 
 	public bool doWindow0 = false;
 	void DoWindow0(int windowID) {
 		// Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
-		if(GUI.Button(new Rect(20,40,200,20), Mission.title)) {
+		if(GUI.Button(new Rect(20,40,200,20), Mission.missionList[0].title)) {
 			Application.LoadLevel("MissionSelect");
 		}
 		

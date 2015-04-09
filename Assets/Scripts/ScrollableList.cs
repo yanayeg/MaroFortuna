@@ -7,9 +7,20 @@ public class ScrollableList : MonoBehaviour
 {
 	public GameObject itemPrefab;
 	public int itemCount = 10, columnCount = 1;
+	public List<Character> playerVar;
+
+
 	
 	void Start()
 	{
+		//can now access data of a character
+		playerVar =  Character.charList;
+		if (playerVar != null) {
+			Debug.Log (playerVar[0].charName);
+			Debug.Log (playerVar[0].profession);
+		} else {
+			Debug.Log ("not found");
+		}
 		RectTransform rowRectTransform = itemPrefab.GetComponent<RectTransform>();
 		RectTransform containerRectTransform = gameObject.GetComponent<RectTransform>();
 		
@@ -25,7 +36,7 @@ public class ScrollableList : MonoBehaviour
 		float scrollHeight = height * rowCount;
 		containerRectTransform.offsetMin = new Vector2(containerRectTransform.offsetMin.x, -scrollHeight / 2);
 		containerRectTransform.offsetMax = new Vector2(containerRectTransform.offsetMax.x, scrollHeight / 2);
-		
+	
 		int j = 0;
 		for (int i = 0; i < itemCount; i++)
 		{
@@ -49,8 +60,9 @@ public class ScrollableList : MonoBehaviour
 			y = rectTransform.offsetMin.y + height;
 			rectTransform.offsetMax = new Vector2(x, y);
 		}
-		
-		
 	}
-	
+
+	void Update(){
+
+	}
 }

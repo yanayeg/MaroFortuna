@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class missionDescription : MonoBehaviour {
@@ -7,11 +8,9 @@ public class missionDescription : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		
-		string missionDesc = Mission.description.ToString();
+		string missionDesc = Mission.missionList[0].description;
 		Text guiText = GameObject.Find("Description").GetComponent<Text>();
 		guiText.text = missionDesc;
-
 	
 	}
 	
