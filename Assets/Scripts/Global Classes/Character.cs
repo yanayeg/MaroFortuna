@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Character : MonoBehaviour {
-	public static List<Character> charList = new List<Character> ();      //list of available characters
+	//public static List<Character> charList = new List<Character> ();      //list of available characters
 	public int profession;    
 	public string charName;     
 	public Texture sprite;
@@ -36,13 +36,13 @@ public class Character : MonoBehaviour {
 
 	void Awake(){
 
-		//instantiate and add to list all your characters (we probably need to do this for each single one, so copy paste!)
+		/*//instantiate and add to list all your characters (we probably need to do this for each single one, so copy paste!)
 		Character char1 = new Character (1, "Jorts Bear", Resources.Load("/Users/Craig/Documents/MaroFortuna/Assets/Textures/Captain Portrait.png") as Texture, 0, 1,
 		                               "A rogue cop who doesn't play by the rules... in jorts.");
 		charList.Add (char1);
 
 		//this allows it to persist
-		DontDestroyOnLoad (transform.gameObject);
+		DontDestroyOnLoad (transform.gameObject);*/
 
 	}
 }
