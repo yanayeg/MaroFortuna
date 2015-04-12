@@ -539,6 +539,7 @@ GameObject:
   - 4: {fileID: 1737342690}
   - 114: {fileID: 1737342689}
   - 114: {fileID: 1737342688}
+  - 114: {fileID: 1737342692}
   - 114: {fileID: 1737342691}
   m_Layer: 0
   m_Name: GlobalScripts
@@ -560,7 +561,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   description: 
-  successDescription: 
+  successDesc: 
+  failDesc: 
+  squadSize: 0
+  majorAd: 
+  minorAd: 
+  majorDis: 
+  minorDis: 
+  successChance: 0
+  difficulty: 
+  type: 
+  rewardRsc: {fileID: 0}
+  rewardChar: 
 --- !u!114 &1737342689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -601,7 +613,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 700f8b752527d1a45954e589cd39a201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerVar: []
+  dayCounter: 0
+--- !u!114 &1737342692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737342687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde003790b423114bbe96f8754d9d8e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rscName: 
+  type: 
+  quantity: 0
 --- !u!1 &2041410189
 GameObject:
   m_ObjectHideFlags: 0
