@@ -9,16 +9,68 @@ public class Data : MonoBehaviour {
 	public int dayCounter;
 
 	void Awake(){
+		//--------------------------------------CHARACTER CREATION SECTION-------------------------------------------//
+		//instantiate and add to list all your characters (we probably need to do this for each single one, so copy paste!)
+		Character c;
+		//MILITARY CHARACTERS
+		c = new Character ("Military", "Sitting Bull", Resources.Load("/Portrait.png") as Texture, 0, 1,
+		                   "Leader of the great tribes.");
+		charList.Add (c);
+		c = new Character ("Military", "Sun Tzu the Tiger", Resources.Load ("/Portrait.png") as Texture, 0, 1,
+		                  "Wrote important military tactics in his novel, “The Art of Roar.");
+		charList.Add(c);
+		c = new Character ("Military", "Artemis the Wolf", Resources.Load ("/Portrait.png") as Texture, 0, 1,
+		                   " ");
+		charList.Add (c);
+		c = new Character ("Military", "Zorro the Fox", Resources.Load ("/Portrait.png") as Texture, 0, 1,
+		                   " ");
+		charList.Add (c);
+		//SCIENCE CHARACTERS
+		c = new Character ("Science", "Mousie Curie", Resources.Load ("/Portrait.png") as Texture, 0, 1,
+		                   "Won the Swiss Prize in her studies of radiated cheese curds.");
+		charList.Add (c);
+		c = new Character ("Science", "Hathaway the Hare", Resources.Load ("/Portrait.png") as Texture, 0, 1,
+		                   "This black hat hacker named Hathaway.");
+		charList.Add (c);
+		c = new Character ("Science", "Ram Descartes", Resources.Load ("/Portrait.png") as Texture, 0, 1,
+		                   "Mathematician and philisophist, most famous statement: If it fits, I sits.");
+		charList.Add (c);
+		c = new Character ("Science", "Olympia the Owl", Resources.Load ("/Portrait.png") as Texture, 0, 1,
+		                   " ");
+		charList.Add (c);
+		//ESPIONAGE CHARACTERS
+		c = new Character ("Espionage", "Margreet the Bat", Resources.Load ("/Portrait.png") as Texture, 0, 1,
+		                   "A master of disguise and dancing.");
+		charList.Add (c);
+		c = new Character ("Espionage", "Pierre The Parrot", Resources.Load ("/Portrait.png") as Texture, 0, 1,
+		                   "Pierre the pickpocketing parrot.");
+		charList.Add (c);
+		c = new Character ("Espionage", "Roy the Boartender", Resources.Load ("/Portrait.png") as Texture, 0, 1,
+		                   "He hears a lot of gossip around the speakeasy.");
+		charList.Add (c);
+		c = new Character ("Espionage", "Lucia the Crow", Resources.Load ("/Portrait.png") as Texture, 0, 1,
+		                   " ");
+		charList.Add (c);
+		//DIPLOMACY CHARACTERS
+		c = new Character ("Diplomacy", "Espresso the Dog", Resources.Load ("/Portrait.png") as Texture, 0, 1,
+		                   "He just wants to talk things out over some good coffee.");
+		charList.Add (c);
+		c = new Character ("Diplomacy", "Octavia the Octopus", Resources.Load ("/Portrait.png") as Texture, 0, 1,
+		                   "He just wants to talk things out over some good coffee.");
+		charList.Add (c);
+		c = new Character ("Diplomacy", "Eisenhower the Elk", Resources.Load ("/Portrait.png") as Texture, 0, 1,
+		                   " ");
+		charList.Add (c);
+		c = new Character ("Diplomacy", "Masako the Monkey", Resources.Load ("/Portrait.png") as Texture, 0, 1,
+		                   " ");
+		charList.Add (c);
 
+		//-----------------------------------RESOURCE CREATION SECTION--------------------------------------------//
 		//create a list of resouces
 		Resource r1 = new Resource ("Gold", "Diplomacy", 100);
 
-	
-		//instantiate and add to list all your characters (we probably need to do this for each single one, so copy paste!)
-		Character c1 = new Character (1, "Jorts Bear", Resources.Load("/Users/Craig/Documents/MaroFortuna/Assets/Textures/Captain Portrait.png") as Texture, 0, 1,
-		                                 "A rogue cop who doesn't play by the rules... in jorts.");
-		charList.Add (c1);
 
+		//-----------------------------------MISSION CREATION SECTION--------------------------------------------//
 		//create and add all missions to this list and add resource to list when success
 		Mission m1 = new Mission ("Car-tastrophe", "You see an opaque object underneath the nearby water. As your ship approaches to investigate you discover the remnants of a submerged automobile. " +
 		                          "You send some crew members to try and retrieve the car to search it for supplies.", "Your crew members take advantage of their skills to successfully raise the car from the water. " +
@@ -28,7 +80,10 @@ public class Data : MonoBehaviour {
 		                          "Science", "Diplomacy", 85, "Easy", "Military", r1, "None");
 		missionList.Add (m1);
 
-		//this allows it to persist
+
+
+
+		//this allows it to persist (don't delete please)
 		DontDestroyOnLoad (transform.gameObject);
 	}
 

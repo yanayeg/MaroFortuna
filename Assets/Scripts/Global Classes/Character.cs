@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Character : MonoBehaviour {
-	public int profession;    
+	public string profession;    
 	public string charName;     
 	public Texture sprite;
 	public double experience;
@@ -14,7 +14,7 @@ public class Character : MonoBehaviour {
 		//empty constructor
 	}
 
-	public Character(int profession, string charName, Texture sprite, double experience, int status, string description) {
+	public Character(string profession, string charName, Texture sprite, double experience, int status, string description) {
 		this.profession = profession;
 		this.charName = charName;
 		this.sprite = sprite;
