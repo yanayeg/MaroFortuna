@@ -6,7 +6,7 @@ public class Character : MonoBehaviour {
 	public string profession;    
 	public string charName;     
 	public Texture sprite;
-	public double experience;
+	public double experience; //Lvl 1: 0 - 500; Lvl 2: 501 - 1000; Lvl 3: 1001 - 1500
 	public int status;        //0 = Dead, 1 = alive, 2 = injured
 	public string description;
 
