@@ -5,29 +5,35 @@ using System.Collections.Generic;
 public class missionMenus0 : MonoBehaviour {
 	public bool doWindow0 = false;
 	List<Mission> missionListMenu = new List<Mission> (); 
+
 	void DoWindow0(int windowID) {
-
-		// Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
-		if(GUI.Button(new Rect(20,40,200,20), missionListMenu[0].title)) {
-			Data.pickedMission = Data.missionList[0];
-			Debug.Log("the picked missions is: " + Data.pickedMission.title);
-			Application.LoadLevel("MissionSelect");
+		if (missionListMenu.Count == 0) {
+			if (GUI.Button (new Rect (20, 160, 200, 20), "Close")) {
+				doWindow0 = false;
+			}
+		} 
+		else {
+			// Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
+			if (GUI.Button (new Rect (20, 40, 200, 20), missionListMenu [0].title)) {
+				Data.pickedMission = Data.missionList [0];
+				Debug.Log ("the picked missions is: " + Data.pickedMission.title);
+				Application.LoadLevel ("MissionSelect");
+			}
+			if (GUI.Button (new Rect (20, 80, 200, 20), missionListMenu [1].title)) {
+				Data.pickedMission = Data.missionList [1];
+				Debug.Log ("the picked missions is: " + Data.pickedMission.title);
+				Application.LoadLevel ("MissionSelect");
+			}
+			if (GUI.Button (new Rect (20, 120, 200, 20), missionListMenu [2].title)) {
+				Data.pickedMission = Data.missionList [2];
+				Debug.Log ("the picked missions is: " + Data.pickedMission.title);
+				Application.LoadLevel ("MissionSelect");
+			}
+			//Close the panel.
+			if (GUI.Button (new Rect (20, 160, 200, 20), "Close")) {
+				doWindow0 = false;
+			}
 		}
-		if(GUI.Button(new Rect(20,80,200,20), missionListMenu[1].title)) {
-			Data.pickedMission = Data.missionList[1];
-			Debug.Log("the picked missions is: " + Data.pickedMission.title);
-			Application.LoadLevel("MissionSelect");
-		}
-		if(GUI.Button(new Rect(20,120,200,20), missionListMenu[2].title)) {
-			Data.pickedMission = Data.missionList[2];
-			Debug.Log("the picked missions is: " + Data.pickedMission.title);
-			Application.LoadLevel("MissionSelect");
-		}
-		//Close the panel.
-		if (GUI.Button (new Rect (20,160,200,20), "Close")) {
-			doWindow0 = false;
-		}
-
 	}
 
 	// Use this for initialization
@@ -35,7 +41,7 @@ public class missionMenus0 : MonoBehaviour {
 		Data.missionList = ShuffleList (Data.missionList);
 		for (int i = 0; i < 3; i++) {
 			if (Data.missionList [i].isListed == false && Data.missionList [i].isDone == false) {
-				Debug.Log("Listed" + Data.missionList[i].title);
+				Debug.Log("Listed " + Data.missionList[i].title);
 				Data.missionList[i].isListed = true;
 				missionListMenu.Add(Data.missionList [i]);
 			}
