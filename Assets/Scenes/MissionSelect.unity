@@ -803,7 +803,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1796045654}
   m_HandleRect: {fileID: 1796045653}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1688,6 +1688,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1574173352}
   - 114: {fileID: 1574173353}
+  - 114: {fileID: 1574173354}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -1718,6 +1719,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c10cb102a4107b4bbde19bf2579690b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1574173354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1574173351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfdc959900f47e94b8e45d905a695c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1583064518
