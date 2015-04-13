@@ -10,6 +10,11 @@ public class missionDescription : MonoBehaviour {
 		string missionDesc = Data.missionList[0].description;
 		Text guiText = GameObject.Find("Description").GetComponent<Text>();
 		guiText.text = missionDesc;
+
+		//at end of displaying messages clear isListed properties for missions 
+		foreach(Mission m in Data.missionList){
+			m.isListed = false;
+		}
 	
 	}
 	
