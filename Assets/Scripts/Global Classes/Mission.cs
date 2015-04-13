@@ -25,15 +25,9 @@ public class Mission : MonoBehaviour{
 	}
 	public Mission(string title, string description, string successDesc, string failDesc, int squadSize,
 	               string majorAd, string minorAd, string majorDis, string minorDis, int successChance,
-<<<<<<< Updated upstream
-	               string difficulty, string type, Resource rewardRsc, string rewardChar, bool isListed, bool isDone){
-=======
-<<<<<<< HEAD
-	               int difficulty, string type, Resource rewardRsc, string rewardChar){
-=======
-	               string difficulty, string type, Resource rewardRsc, string rewardChar, bool isListed, bool isDone){
->>>>>>> origin/master
->>>>>>> Stashed changes
+	               int difficulty, string type, Resource rewardRsc, string rewardChar, bool isListed, bool isDone){
+	            
+
 		this.title = title;
 		this.description = description;
 		this.successDesc = successDesc;
@@ -50,8 +44,7 @@ public class Mission : MonoBehaviour{
 		this.rewardChar = rewardChar;
 		this.isListed = isListed;
 		this.isDone = isDone;
-<<<<<<< Updated upstream
-=======
+
 	}
 
 	public bool runMission(Mission mission, Character[] charList){
@@ -86,20 +79,14 @@ public class Mission : MonoBehaviour{
 				else if (charList [i].experience < 1001)
 					chance -= 17 / mission.squadSize;
 			}
-			Debug.Log (chance);
 			if (charList [i].profession == mission.majorAd)
 				chance += 33 / mission.squadSize;
-			Debug.Log (chance);
 			if (charList [i].profession == mission.minorAd)
 				chance += 17 / mission.squadSize;
-			Debug.Log (chance);
 			if (charList [i].profession == mission.majorDis)
 				chance -= 33 / mission.squadSize;
-			Debug.Log (chance);
 			if (charList [i].profession == mission.minorDis)
 				chance -= 17 / mission.squadSize;
-			Debug.Log (chance);
-
 
 
 		}
@@ -116,6 +103,5 @@ public class Mission : MonoBehaviour{
 		}
 
 
->>>>>>> Stashed changes
 	}
 }

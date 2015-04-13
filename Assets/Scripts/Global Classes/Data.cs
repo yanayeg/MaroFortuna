@@ -78,21 +78,21 @@ public class Data : MonoBehaviour {
 		                          "After shuffling the spooky skeleton of the unfortunate past passenger out of the seat you find a small stash of supplies in the glove box! Nice one champ.",
 		                          "After hours of struggling you and your crew fail to dislodge the car. Your muscles are weak and your spirits are low as from the dark depths of the abyss below you the car almost seems to smirk, " +
 		                          "satisfied by your failure and content in its eternal aquatic home. The mystery of what resides inside that underwater car will haunt you for years to come. ", 2, "Military", "Espionage",
-		                          "Science", "Diplomacy", 85, "Easy", "Military", r1, "None", false, false);
+		                          "Science", "Diplomacy", 85, 1, "Military", r1, "None", false, false);
 		missionList.Add (m1);
 		m1 = new Mission ("test2", "You see an opaque object underneath the nearby water. As your ship approaches to investigate you discover the remnants of a submerged automobile. " +
 		                          "You send some crew members to try and retrieve the car to search it for supplies.", "Your crew members take advantage of their skills to successfully raise the car from the water. " +
 		                          "After shuffling the spooky skeleton of the unfortunate past passenger out of the seat you find a small stash of supplies in the glove box! Nice one champ.",
 		                          "After hours of struggling you and your crew fail to dislodge the car. Your muscles are weak and your spirits are low as from the dark depths of the abyss below you the car almost seems to smirk, " +
 		                          "satisfied by your failure and content in its eternal aquatic home. The mystery of what resides inside that underwater car will haunt you for years to come. ", 2, "Military", "Espionage",
-		                          "Science", "Diplomacy", 85, "Easy", "Military", r1, "None", false, false);
+		                          "Science", "Diplomacy", 85, 1, "Military", r1, "None", false, false);
 		missionList.Add (m1);
 		m1 = new Mission ("test3", "You see an opaque object underneath the nearby water. As your ship approaches to investigate you discover the remnants of a submerged automobile. " +
 		                          "You send some crew members to try and retrieve the car to search it for supplies.", "Your crew members take advantage of their skills to successfully raise the car from the water. " +
 		                          "After shuffling the spooky skeleton of the unfortunate past passenger out of the seat you find a small stash of supplies in the glove box! Nice one champ.",
 		                          "After hours of struggling you and your crew fail to dislodge the car. Your muscles are weak and your spirits are low as from the dark depths of the abyss below you the car almost seems to smirk, " +
 		                          "satisfied by your failure and content in its eternal aquatic home. The mystery of what resides inside that underwater car will haunt you for years to come. ", 2, "Military", "Espionage",
-		                          "Science", "Diplomacy", 85, "Easy", "Military", r1, "None", false, false);
+		                          "Science", "Diplomacy", 85, 1, "Military", r1, "None", false, false);
 		missionList.Add (m1);
 		
 		
