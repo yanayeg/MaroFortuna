@@ -15,7 +15,7 @@ public class testTextScript : MonoBehaviour {
 		Text guiText2 = GameObject.Find("successMessage").GetComponent<Text>();
 		guiText2.text = outcome;
 		// if it was successful mission call:
-		Resource reward = Data.missionList [0].rewardRsc;
+		Resource reward = Data.missionList[0].rewardRsc;
 		Data.resourceList.Add (reward);
 		//test if it worked
 		if (Data.resourceList != null) {

@@ -17,13 +17,15 @@ public class Mission : MonoBehaviour{
 	public string type;
 	public Resource rewardRsc;
 	public string rewardChar;
+	public bool isListed;
+	public bool isDone;
 
 	public Mission(){
 		//empty constructer
 	}
 	public Mission(string title, string description, string successDesc, string failDesc, int squadSize,
 	               string majorAd, string minorAd, string majorDis, string minorDis, int successChance,
-	               string difficulty, string type, Resource rewardRsc, string rewardChar){
+	               string difficulty, string type, Resource rewardRsc, string rewardChar, bool isListed, bool isDone){
 		this.title = title;
 		this.description = description;
 		this.successDesc = successDesc;
@@ -38,5 +40,7 @@ public class Mission : MonoBehaviour{
 		this.type = type;
 		this.rewardRsc = rewardRsc;
 		this.rewardChar = rewardChar;
+		this.isListed = isListed;
+		this.isDone = isDone;
 	}
 }
