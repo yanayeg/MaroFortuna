@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class missionMenus1 : MonoBehaviour {
+public class missionMenus2 : MonoBehaviour {
 	public bool doWindow0 = false;
 	List<Mission> missionListMenu = new List<Mission> (); 
 	void DoWindow0(int windowID) {
@@ -29,7 +29,7 @@ public class missionMenus1 : MonoBehaviour {
 		}
 		
 	}
-
+	
 	// Use this for initialization
 	void Start () {
 		Data.missionList = ShuffleList (Data.missionList);

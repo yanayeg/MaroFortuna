@@ -22,6 +22,12 @@ public class testTextScript : MonoBehaviour {
 			Debug.Log(Data.resourceList[0].rscName);
 		}
 
+
+		//at end of displaying messages clear isListed properties for missions 
+		foreach(Mission m in Data.missionList){
+			m.isListed = false;
+		}
+
 	}
 	
 	// Update is called once per frame

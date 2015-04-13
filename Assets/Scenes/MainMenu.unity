@@ -882,7 +882,7 @@ MonoBehaviour:
   majorDis: 
   minorDis: 
   successChance: 0
-  difficulty: 
+  difficulty: 0
   type: 
   rewardRsc: {fileID: 0}
   rewardChar: 

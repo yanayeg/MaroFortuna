@@ -258,13 +258,12 @@ GameObject:
 --- !u!114 &339266386
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11472548, guid: 13de7c281c3325346a297718b5addc48,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 339266385}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2646d70e2edeeee488cd0458a8185860, type: 3}
+  m_Script: {fileID: 11500000, guid: b5c4a08328123f242af26bd38d9158a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   doWindow0: 0
@@ -383,7 +382,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 570728114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2646d70e2edeeee488cd0458a8185860, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ccba9783a634ce439b2ece6b865ada3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   doWindow0: 0
@@ -653,6 +652,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 138498, guid: c805a5fa52d55a74caa222039091f961, type: 2}
+      propertyPath: m_Name
+      value: Ocean Map Island3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c805a5fa52d55a74caa222039091f961, type: 2}
   m_IsPrefabParent: 0
@@ -668,7 +671,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 909556568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2646d70e2edeeee488cd0458a8185860, type: 3}
+  m_Script: {fileID: 11500000, guid: a79009742146fdd47b5eb827c8da2676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   doWindow0: 0
@@ -738,7 +741,7 @@ GameObject:
   - 61: {fileID: 1039631120}
   - 114: {fileID: 1039631119}
   m_Layer: 0
-  m_Name: Ocean Map Island1
+  m_Name: Ocean Map Island4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -747,13 +750,12 @@ GameObject:
 --- !u!114 &1039631119
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11472548, guid: 13de7c281c3325346a297718b5addc48,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1039631118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2646d70e2edeeee488cd0458a8185860, type: 3}
+  m_Script: {fileID: 11500000, guid: 9898983d073e38b43b014a4cada10df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   doWindow0: 0
