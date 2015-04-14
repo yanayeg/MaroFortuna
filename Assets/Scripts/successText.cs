@@ -44,6 +44,9 @@ public class successText : MonoBehaviour {
 			if(m.title == Data.pickedMission.title)
 				m.isDone = true;
 		}
+
+		//update day counter
+		Data.dayCounter++;
 	}
 	
 	// Update is called once per frame
