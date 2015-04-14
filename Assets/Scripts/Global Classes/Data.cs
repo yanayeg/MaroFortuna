@@ -85,7 +85,7 @@ public class Data : MonoBehaviour {
 
 		Resource d1 = new Resource ("Flock of flavorful fish", "Diplomacy", 100);
 		Resource d2 = new Resource ("Gold", "Diplomacy", 100);
-		Resource d3 = new Resource ("Favor of the locals", 100);
+		Resource d3 = new Resource ("Favor of the locals", "Diplomacy", 100);
 
 
 		//-----------------------------------MISSION CREATION SECTION--------------------------------------------//
@@ -116,7 +116,7 @@ public class Data : MonoBehaviour {
 
 		//------------------------------------- SCIENCE MISSIONS -----------------------------------------------//
 		
-		m = new Missions("Portal to the Unknown","You see a weird set of machines as you approach this island. As you look closer it looks like some kind of modern portal. You're not sure where it may lead you." + 
+		m = new Mission("Portal to the Unknown","You see a weird set of machines as you approach this island. As you look closer it looks like some kind of modern portal. You're not sure where it may lead you." + 
 							"There's a chance if you send some crew members into this portal that it could lead to some big rewards.",
 							"After waiting for what seems like forever for your crew members to return from the portal you are worried about if they ever will come back. However, as the day almost closes and you" +
 							"are about to give up, your crew members come back out the portal carrying fancy new laser guns and high tech utility belts. It looks like their smarts helped them navigate through the" +
@@ -125,19 +125,19 @@ public class Data : MonoBehaviour {
 							"about to give up you see a bright spark come from the portal. All of a sudden your members are thrown out of the portal. It seems like they don't remember anything that just happened to them. They must have been brain wiped before they were kicked out.",
 							 2, "Science", "Espionage", "Military", "Diplomacy", 80, 1, "Science", s1, "None", false, false);
 		missionList.Add (m);
-		m = new Missions("Drill Baby Drill", "You hear a rumor that a mining company in the sector is trying to station a refinery on a  nearby gas giant and are having trouble stabilizing it's ocean platform. One of your advisors suggest that we could be rewarded if we help them solve their problem",
+		m = new Mission("Drill Baby Drill", "You hear a rumor that a mining company in the sector is trying to station a refinery on a  nearby gas giant and are having trouble stabilizing it's ocean platform. One of your advisors suggest that we could be rewarded if we help them solve their problem",
 						 "Your crew realizes there are fluctuations due to an anomoly from an underwater vent. By accounting for this, the refinery was stabilized and the mining company's representative thanks you for your help.",
 						 "Your crew couldn't come up with a solution and the mining company had to call in help from their holding company. They thank you for your efforts, despite the lack of progress, but you recieve no reward. ",
 						  1, "Science", "Espionage", "Military", "Diplomacy", 60, 2, "Science", s2, "None", false, false);
 		missionList.Add (m);
-		m = new Missions("Don't Poison Me, Bro!", "A strange, purple liquid is found oozing out of a nearby water source. This gives rise to a rumor that poison is being pumped into the water supply and many people become outraged." + 
+		m = new Mission("Don't Poison Me, Bro!", "A strange, purple liquid is found oozing out of a nearby water source. This gives rise to a rumor that poison is being pumped into the water supply and many people become outraged." + 
 						 "However, it is up to you to investigate and figure out what is going on.", "After running some tests in the lab, you come to find that the substance found in the water supply is completely harmless. In fact," + 
 						 "the water tastes even better, and apparently has some healthier properties. Yay!",
 						 "After running some tests in the lab, you come to find that the substance found in the water supply actually has traces of rat poison in it! Now half of the inhabitants on this planet do not trust you. Boo!",
 						  1, "Science", "Espionage", "Diplomacy", "Military", 80, 1, "Science", s3, "None", false, false); 
 
 		missionList.Add (m);
-		m = new Missions("Quick Before the Volcano Blows!", "You hear an explosion in the distance. After approaching the area, you see weird light emitting from a rock formation. Not knowing if the area is dangerous or not, you decide to explore anyways.",
+		m = new Mission("Quick Before the Volcano Blows!", "You hear an explosion in the distance. After approaching the area, you see weird light emitting from a rock formation. Not knowing if the area is dangerous or not, you decide to explore anyways.",
 						 "You realize the light being emitted came from a small disco party being held within the nearby dormant volcano. They explain that the explosion formed when they started throwing around some" + 
 						 "old rocks they found lying around the floor. Intrigued, you decide to stay and study the properties of this \"dormant\" volcano.", 
 						 "After exploring for a while, you realize the area is in the way of multiple, dangerous magnetic fields. All of your equipment is damaged!",
@@ -147,19 +147,19 @@ public class Data : MonoBehaviour {
 		//-----------------------------------------------Espionage--------------------------------------------------------------\\
 
 		missionList.Add (m);
-		m = new Missions("The Drop Off", "You pick up transmissions about a \"deal\" going on between two ships in the nearby area. One of your advisors suggests that this \"deal\" can be used to our advantage to curry favor with the nearby authorities.",
+		m = new Mission("The Drop Off", "You pick up transmissions about a \"deal\" going on between two ships in the nearby area. One of your advisors suggests that this \"deal\" can be used to our advantage to curry favor with the nearby authorities.",
 						 "You collect transmission data and report it back to local authorities. They deploy bounty hunters and give you money for the information.",
 						 "The two ships picked up your crew members spying on them in the vicinity and quickly bailed. Any opportunity to take action is now lost.",
 						 1, "Espionage", "Military", "Diplomacy", "Science", 70, 1, "Espionage", e1, "None", false, false);
 
 		missionList.Add(m);
-		m = new Missions("Go Fish", "An undercover agent, Q, selects you to man a secret mission that will involve wiretapping a nearby successful fishing boat in order to listen in on secret information that will help you in the long run. Are you up for it?",
+		m = new Mission("Go Fish", "An undercover agent, Q, selects you to man a secret mission that will involve wiretapping a nearby successful fishing boat in order to listen in on secret information that will help you in the long run. Are you up for it?",
 						 "You successfully listen in on many conversations aboard the neighboring ship without being caught. Now you know a cornucopia of secrets about fishing and the citizens of your planet won't starve. Yay!",
 						 "You accidentally mixed up the wiring and got completely mixed up signals. Looks like you should have picked some better spies for this mission, buddy. Maybe next time!",
 						 3, "Espionage", "Diplomacy", "Science", "Military", 70, 1, "Espionage", e2, "None", false, false);
 
 		missionList.Add (m);
-		m = new Missions("Gone Baby", "A baby is dropped on the doorstep of your ship. Whose baby is this? Where did it come from? Where will it go? You must try to find the reason for this random baby at once!", 
+		m = new Mission("Gone Baby", "A baby is dropped on the doorstep of your ship. Whose baby is this? Where did it come from? Where will it go? You must try to find the reason for this random baby at once!", 
 						 "With your investigation taking place at once, you come to realize this \"baby\" is really a small woman in disguise! She is flabbergasted by your sleuthing skills and awards you a small sum of money. She would have gotten away with it if it weren't for you pesky kids!",
 						 "Before you figure out the secret of the baby, it's too late. You realize the baby is a small SPY woman in disguise and she steals top secret information before she escapes!",
 						 2, "Espionage", "Diplomacy", "Science", "Military", 77, 1, "Espionage", e3, "None", false, false);
@@ -168,19 +168,19 @@ public class Data : MonoBehaviour {
 		//-------------------------------------------------------Diplomacy---------------------------------------------// 
 
 		missionList.Add (m);
-		m = new Missions("Grill Baby Grill", "You see a smoke signal from a nearby island, as you approach you see a group of fishermen grilling fish. They don't seem hostile.",
+		m = new Mission("Grill Baby Grill", "You see a smoke signal from a nearby island, as you approach you see a group of fishermen grilling fish. They don't seem hostile.",
 						 "Your crew members approach the fishermen and are given a friendly welcome. You make a remark about a school of fish you came across on your way here. In return they offer you some fish to take back to the ship with you.",
 						 "There was almost a confrontation between the fishermen and your crew. You were asked to promptly leave, in order to avoid the situation you withdraw.",
 						 2, "Diplomacy", "Science", "Military", "Espionage", 80, 1, "Diplomacy", d1, "None", false, false);
 
 		missionList.Add (m);
-		m = new Missions("We're Not in Kansas Anymore", "A ship crashes into your planet, but nothing comes out of it for an hour. After another hour passes, you see a figure trying to climb out of the ship. You decide to send some of your crew over to see what is going on.",
+		m = new Mission("We're Not in Kansas Anymore", "A ship crashes into your planet, but nothing comes out of it for an hour. After another hour passes, you see a figure trying to climb out of the ship. You decide to send some of your crew over to see what is going on.",
 						 "You find a small family of five, but you can't understand their language! Luckily, one of your diplomats is able to translate. The family is grateful for your help and pay you a small sum of money for fixing their ship. It's the least they could do.",
 						 "You approach the ship, and the small family trapped inside react in a hostile manner. You cannot understand their alien language, and they become angrier. Everything you do seems to upset them! After a minute of arguing, the entire family vanishes in thin air. Oh well.",
 						 2, "Diplomacy", "Espionage", "Military", "Science", 50, 3, "Diplomacy", d2, "None", false, false);
 
 		missionList.Add (m);
-		m = new Missions("It's All Greek to Me", "A sealed capsule is uncovered near an ancient ruin in the middle of a desert island. You manage to open it, and find only a slip of paper with the message \"ØƔʤϱϔҨ\" marked upon it. You must figure out what this means!", 
+		m = new Mission("It's All Greek to Me", "A sealed capsule is uncovered near an ancient ruin in the middle of a desert island. You manage to open it, and find only a slip of paper with the message \"ØƔʤϱϔҨ\" marked upon it. You must figure out what this means!", 
 						 "After sleuthing around various ruins, you find the same message encrypted into a wall on a neighboring island. With the help of the local villagers, you realize the message states \"we come in peace.\" The makers of the message are long gone, but the local villagers now trust you. Woo!",
 						 "You cannot figure out what the message says, no matter what you do. But it doesn't matter, because before you can guess that the message means \"stay away\" a ninja clan swoops out of nowhere and attacks! AH!", 
 						 2, "Diplomacy", "Espionage", "Military", "Science", 60, 2, "Espionage", d3, "None", false, false);
