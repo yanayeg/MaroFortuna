@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class Character : MonoBehaviour {
 	public string profession;    
 	public string charName;     
-	public Texture sprite;
+	public Sprite sprite;
 	public double experience; //Lvl 1: 0 - 500; Lvl 2: 501 - 1000; Lvl 3: 1001 - 1500
 	public int status;        //0 = Dead, 1 = alive, 2 = injured
 	public string description;
@@ -15,7 +15,7 @@ public class Character : MonoBehaviour {
 		//empty constructor
 	}
 
-	public Character(string profession, string charName, Texture sprite, double experience, int status, string description, bool isPicked) {
+	public Character(string profession, string charName, Sprite sprite, double experience, int status, string description, bool isPicked) {
 		this.profession = profession;
 		this.charName = charName;
 		this.sprite = sprite;
