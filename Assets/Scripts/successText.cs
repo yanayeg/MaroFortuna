@@ -39,7 +39,11 @@ public class successText : MonoBehaviour {
 		//at end of displaying messages clear activeMissionChars
 		Data.activeMissionChars.Clear ();
 
-		
+		//mark mission as done
+		foreach(Mission m in Data.missionList){
+			if(m.title == Data.pickedMission.title)
+				m.isDone = true;
+		}
 	}
 	
 	// Update is called once per frame
