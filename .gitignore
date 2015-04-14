@@ -22,7 +22,6 @@ ExportedObj/
 
 # include meta files
 !*.*.meta
-*.meta
 
 # ============ #
 # OS generated #
