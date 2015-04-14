@@ -297,7 +297,6 @@ GameObject:
   - 224: {fileID: 467771427}
   - 222: {fileID: 467771429}
   - 114: {fileID: 467771428}
-  - 114: {fileID: 467771430}
   m_Layer: 5
   m_Name: SuccessText
   m_TagString: Untagged
@@ -334,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .0514705777, g: .0476859771, b: .0476859771, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -354,17 +353,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 467771426}
---- !u!114 &467771430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 467771426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edbc5d359b58d72478f9fa28b8f761fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &978117606
 GameObject:
   m_ObjectHideFlags: 0

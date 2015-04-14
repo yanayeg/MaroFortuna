@@ -9,18 +9,29 @@ public class successText : MonoBehaviour {
 		
 		string success = Data.pickedMission.successDesc;
 		string fail = Data.pickedMission.failDesc;
+		bool win = false;
 		Mission activeMission = Data.pickedMission;
 		Text guiText1 = GameObject.Find("SuccessText").GetComponent<Text>();
-		if (activeMission.runMission (activeMission, Data.activeMissionChars))
-			guiText1.text = success;
+		if (activeMission.runMission (activeMission, Data.activeMissionChars)) {
+			win = true;
+			Resource reward = Data.pickedMission.rewardRsc;
+			for (int i = 0; i<Data.pickedMission.squadSize; i++)
+				Data.activeMissionChars[i].addExperience(100);
+
+			guiText1.text = "Success \n" + success + "\n\nRewards: \n" + Data.pickedMission.rewardRsc.rscName;
+		}
 		else
-			guiText1.text = fail;
+			guiText1.text = "Fail \n" + fail;
 
 
 		Text guiText2 = GameObject.Find ("SquadList").GetComponent<Text> ();
 		string names = "";
-		for (int i = 0; i<Data.activeMissionChars.Capacity; i++)
-			names += Data.activeMissionChars [i].charName + "\n";
+		for (int i = 0; i<Data.pickedMission.squadSize; i++) {
+			if (win)
+				names += Data.activeMissionChars [i].charName + " +100 XP \n";
+			else
+				names += Data.activeMissionChars [i].charName + " +0 XP \n";
+		}
 
 		guiText2.text = names;
 		

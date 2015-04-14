@@ -56,7 +56,7 @@ public class Mission : MonoBehaviour{
 		if (mission.difficulty == 3)
 			chance += 20;
 		*/
-		for (int i = 0; i < charList.Capacity; i++) {    //charList.Length should be the same as squadSize
+		for (int i = 0; i < mission.squadSize; i++) {    
 
 			if (mission.difficulty == 1) {
 				if (charList [i].experience > 1000)
