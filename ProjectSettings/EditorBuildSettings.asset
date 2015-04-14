@@ -17,3 +17,5 @@ EditorBuildSettings:
     path: Assets/Scenes/MapScene.unity
   - enabled: 1
     path: Assets/Scenes/DedeMission.unity
+  - enabled: 1
+    path: Assets/Scenes/FailResults.unity
