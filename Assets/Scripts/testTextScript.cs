@@ -6,8 +6,8 @@ public class testTextScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-		string successDesc = Data.missionList[0].successDesc;
+		//select the mission that was picked
+		string successDesc = Data.pickedMission.successDesc;
 		Text guiText = GameObject.Find("Description").GetComponent<Text>();
 		guiText.text = successDesc;
 
@@ -15,7 +15,7 @@ public class testTextScript : MonoBehaviour {
 		Text guiText2 = GameObject.Find("successMessage").GetComponent<Text>();
 		guiText2.text = outcome;
 		// if it was successful mission call:
-		Resource reward = Data.missionList[0].rewardRsc;
+		Resource reward = Data.pickedMission.rewardRsc;
 		Data.resourceList.Add (reward);
 		//test if it worked
 		if (Data.resourceList != null) {

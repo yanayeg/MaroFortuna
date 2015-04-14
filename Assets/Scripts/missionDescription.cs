@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class missionDescription : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
-
-		string missionDesc = Data.missionList[0].description;
+		//select the description of the mission picked
+		string missionDesc = Data.pickedMission.description;
 		Text guiText = GameObject.Find("Description").GetComponent<Text>();
 		guiText.text = missionDesc;
 

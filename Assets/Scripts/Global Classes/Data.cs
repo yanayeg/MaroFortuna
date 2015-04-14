@@ -191,15 +191,6 @@ public class Data : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		List<Character> playerVar;
-		//can now access data of a character
-		playerVar = charList;
-		if (playerVar != null) {
-			Debug.Log (playerVar[0].charName);
-			Debug.Log (playerVar[0].profession);
-		} else {
-			Debug.Log ("not found");
-		}
 	}
 	
 	// Update is called once per frame
