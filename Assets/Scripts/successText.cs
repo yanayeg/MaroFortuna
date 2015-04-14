@@ -15,6 +15,7 @@ public class successText : MonoBehaviour {
 		if (activeMission.runMission (activeMission, Data.activeMissionChars)) {
 			win = true;
 			Resource reward = Data.pickedMission.rewardRsc;
+			Data.resourceList.Add (reward);
 			for (int i = 0; i<Data.pickedMission.squadSize; i++)
 				Data.activeMissionChars[i].addExperience(100);
 
