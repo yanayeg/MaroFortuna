@@ -20,40 +20,45 @@ public class successText : MonoBehaviour {
 			Resource reward = Data.pickedMission.rewardRsc;
 			Data.resourceList.Add (reward);
 			for (int i = 0; i<Data.pickedMission.squadSize; i++)
-				Data.activeMissionChars[i].addExperience(100);
+				Data.activeMissionChars [i].addExperience (100);
 
 			guiText1.text = success + "\n\nRewards: \n" + Data.pickedMission.rewardRsc.rscName;
 			//grant character if it's a third day and successful
 			if (Data.dayCounter % 3 == 0 && Data.dayCounter != 0) 
-				rewardChar = rewardNewChar();
+				rewardChar = rewardNewChar ();
 			//if rewardChar isn't null fields alert the user about the new char
-		}
-		else
-			guiText1.text = "Fail \n" + fail;
-
-
-		Text guiText2 = GameObject.Find ("SquadList").GetComponent<Text> ();
-		string names = "";
-		for (int i = 0; i<Data.pickedMission.squadSize; i++) {
-			if (win)
-				names += Data.activeMissionChars [i].charName + " +100 XP \n";
-			else
-				names += Data.activeMissionChars [i].charName + " +0 XP \n";
-		}
-
-		guiText2.text = names;
 		
-		//at end of displaying messages clear activeMissionChars
-		Data.activeMissionChars.Clear ();
 
-		//mark mission as done
-		foreach(Mission m in Data.missionList){
-			if(m.title == Data.pickedMission.title)
-				m.isDone = true;
+			Text guiText2 = GameObject.Find ("SquadList").GetComponent<Text> ();
+			string names = "";
+			for (int i = 0; i<Data.activeMissionChars.Count; i++) {
+				if (win)
+					names += Data.activeMissionChars [i].charName + " +100 XP \n";
+				else
+					names += Data.activeMissionChars [i].charName + " +0 XP \n";
+				Data.activeMissionChars [i].setPicked ();
+			}
+
+			guiText2.text = names;
+
+		
+			//at end of displaying messages clear activeMissionChars
+			Data.activeMissionChars.Clear ();
+			Data.currentCrewSize = 0;
+
+			//mark mission as done
+			foreach (Mission m in Data.missionList) {
+				if (m.title == Data.pickedMission.title)
+					m.isDone = true;
+			}
+
+			//update day counter
+			Data.dayCounter++;
 		}
 
-		//update day counter
-		Data.dayCounter++;
+		else {
+			Application.LoadLevel ("FailResults");
+		}
 	}
 
 	Character rewardNewChar(){

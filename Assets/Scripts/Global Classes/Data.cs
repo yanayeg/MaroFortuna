@@ -10,7 +10,7 @@ public class Data : MonoBehaviour {
 	public static int dayCounter;
 	public static Mission pickedMission;
 	public static List<Character> activeMissionChars = new List<Character> ();   //list for characters sent on a mission
-
+	public static int currentCrewSize;
 
 	void Awake(){
 		//--------------------------------------CHARACTER CREATION SECTION-------------------------------------------//
@@ -34,13 +34,13 @@ public class Data : MonoBehaviour {
 		c = new Character ("Science", "Mousie Curie", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   "Won the Swiss Prize in her studies of radiated cheese curds.", false);
 		charList.Add (c);
-		currentChars.Add (c);
 		c = new Character ("Science", "Hathaway the Hare", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   "This black hat hacker named Hathaway.", false);
 		charList.Add (c);
 		c = new Character ("Science", "Ram Descartes", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   "Mathematician and philisophist, most famous statement: If it fits, I sits.", false);
 		charList.Add (c);
+		currentChars.Add (c);
 		c = new Character ("Science", "Olympia the Owl", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   " ", false);
 		charList.Add (c);
@@ -62,13 +62,13 @@ public class Data : MonoBehaviour {
 		c = new Character ("Diplomacy", "Espresso the Dog", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   "He just wants to talk things out over some good coffee.", false);
 		charList.Add (c);
-		currentChars.Add (c);
 		c = new Character ("Diplomacy", "Octavia the Octopus", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   "He just wants to talk things out over some good coffee.", false);
 		charList.Add (c);
 		c = new Character ("Diplomacy", "Eisenhower the Elk", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   " ", false);
 		charList.Add (c);
+		currentChars.Add (c);
 		c = new Character ("Diplomacy", "Masako the Monkey", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   " ", false);
 		charList.Add (c);

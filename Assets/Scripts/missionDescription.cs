@@ -19,6 +19,9 @@ public class missionDescription : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		string remaining = "";
+		Text guiText = GameObject.Find("Remaining").GetComponent<Text>();
+		guiText.text = "Characters Needed:\n               " + (Data.pickedMission.squadSize - Data.currentCrewSize);
 	
 	}
 }
