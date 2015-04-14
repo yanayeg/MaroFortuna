@@ -197,7 +197,7 @@ RectTransform:
   m_Children:
   - {fileID: 1320062577}
   m_Father: {fileID: 1138680862}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -99, y: -150}
@@ -311,14 +311,14 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 467771426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1138680862}
+  m_Father: {fileID: 1210802298}
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -87, y: 65}
+  m_AnchoredPosition: {x: -100, y: -136}
   m_SizeDelta: {x: 448, y: 282}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &467771428
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 978117606}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8dbba0fa4ae45745a54ec6b6ae3f228, type: 3}
+  m_Script: {fileID: 11500000, guid: 03aa04dabb3ae3a478ed4b6c7b062abb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &978117608
@@ -432,7 +432,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 467771427}
   - {fileID: 1210802298}
   - {fileID: 52475004}
   m_Father: {fileID: 0}
@@ -522,9 +521,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 467771427}
   m_Father: {fileID: 1138680862}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -1, y: -1}

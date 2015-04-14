@@ -12,6 +12,9 @@ public class successText : MonoBehaviour {
 		bool win = false;
 		Mission activeMission = Data.pickedMission;
 		Text guiText1 = GameObject.Find("SuccessText").GetComponent<Text>();
+
+		//guiText1.text = "Success \n" + success + "\n\nRewards: \n" + Data.pickedMission.rewardRsc.rscName;
+
 		if (activeMission.runMission (activeMission, Data.activeMissionChars)) {
 			win = true;
 			Resource reward = Data.pickedMission.rewardRsc;
@@ -19,7 +22,7 @@ public class successText : MonoBehaviour {
 			for (int i = 0; i<Data.pickedMission.squadSize; i++)
 				Data.activeMissionChars[i].addExperience(100);
 
-			guiText1.text = "Success \n" + success + "\n\nRewards: \n" + Data.pickedMission.rewardRsc.rscName;
+			guiText1.text = success + "\n\nRewards: \n" + Data.pickedMission.rewardRsc.rscName;
 			//grant character if it's a third day and successful
 			if (Data.dayCounter % 3 == 0 && Data.dayCounter != 0) 
 				rewardChar = rewardNewChar();
