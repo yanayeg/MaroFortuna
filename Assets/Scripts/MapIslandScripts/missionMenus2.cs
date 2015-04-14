@@ -39,7 +39,7 @@ public class missionMenus3 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Data.missionList = ShuffleList (Data.missionList);
-		for (int i = 0; i < Data.missionList.Count; i++) {
+		for (int i = 0; i < Data.missionList.Count-1; i++) {
 			if (Data.missionList [i].isListed == false && Data.missionList [i].isDone == false) {
 				Debug.Log("Listed " + Data.missionList[i].title);
 				Data.missionList[i].isListed = true;
