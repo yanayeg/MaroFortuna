@@ -4,10 +4,13 @@ using System.Collections.Generic;
 
 public class Data : MonoBehaviour {
 	public static List<Character> charList = new List<Character> ();      //list of available characters
+	public static List<Character> currentChars = new List<Character> ();  //active character list
 	public static List<Mission> missionList = new List<Mission> ();      //list of available missions
 	public static List<Resource> resourceList = new List<Resource> ();      //list of available missions
 	public static int dayCounter;
 	public static Mission pickedMission;
+	public static List<Character> activeMissionChars = new List<Character> ();   //list for characters sent on a mission
+
 
 	void Awake(){
 		//--------------------------------------CHARACTER CREATION SECTION-------------------------------------------//
@@ -17,6 +20,7 @@ public class Data : MonoBehaviour {
 		c = new Character ("Military", "Sitting Bull", Resources.Load("/Portrait.png") as Texture, 0, 1,
 		                   "Leader of the great tribes.", false);
 		charList.Add (c);
+		currentChars.Add (c);
 		c = new Character ("Military", "Sun Tzu the Tiger", Resources.Load ("/Portrait.png") as Texture, 0, 1,
 		                  "Wrote important military tactics in his novel, “The Art of Roar.", false);
 		charList.Add(c);
@@ -30,6 +34,7 @@ public class Data : MonoBehaviour {
 		c = new Character ("Science", "Mousie Curie", Resources.Load ("/Portrait.png") as Texture, 0, 1,
 		                   "Won the Swiss Prize in her studies of radiated cheese curds.", false);
 		charList.Add (c);
+		currentChars.Add (c);
 		c = new Character ("Science", "Hathaway the Hare", Resources.Load ("/Portrait.png") as Texture, 0, 1,
 		                   "This black hat hacker named Hathaway.", false);
 		charList.Add (c);
@@ -43,6 +48,7 @@ public class Data : MonoBehaviour {
 		c = new Character ("Espionage", "Margreet the Bat", Resources.Load ("/Portrait.png") as Texture, 0, 1,
 		                   "A master of disguise and dancing.", false);
 		charList.Add (c);
+		currentChars.Add (c);
 		c = new Character ("Espionage", "Pierre The Parrot", Resources.Load ("/Portrait.png") as Texture, 0, 1,
 		                   "Pierre the pickpocketing parrot.", false);
 		charList.Add (c);
@@ -56,6 +62,7 @@ public class Data : MonoBehaviour {
 		c = new Character ("Diplomacy", "Espresso the Dog", Resources.Load ("/Portrait.png") as Texture, 0, 1,
 		                   "He just wants to talk things out over some good coffee.", false);
 		charList.Add (c);
+		currentChars.Add (c);
 		c = new Character ("Diplomacy", "Octavia the Octopus", Resources.Load ("/Portrait.png") as Texture, 0, 1,
 		                   "He just wants to talk things out over some good coffee.", false);
 		charList.Add (c);
@@ -186,7 +193,7 @@ public class Data : MonoBehaviour {
 						 2, "Diplomacy", "Espionage", "Military", "Science", 60, 2, "Espionage", d3, "None", false, false);
 
 		missionList.Add (m);
-
+		
 		//this allows it to persist (don't delete please)
 		DontDestroyOnLoad (transform.gameObject);
 	}

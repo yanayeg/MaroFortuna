@@ -47,7 +47,7 @@ public class Mission : MonoBehaviour{
 
 	}
 
-	public bool runMission(Mission mission, Character[] charList){
+	public bool runMission(Mission mission, List<Character> charList){
 		double chance = 50;
 		/*
 		if (mission.difficulty == 1)
@@ -57,7 +57,7 @@ public class Mission : MonoBehaviour{
 		if (mission.difficulty == 3)
 			chance += 20;
 		*/
-		for (int i = 0; i < charList.Length; i++) {    //charList.Length should be the same as squadSize
+		for (int i = 0; i < charList.Capacity; i++) {    //charList.Length should be the same as squadSize
 
 			if (mission.difficulty == 1) {
 				if (charList [i].experience > 1000)
