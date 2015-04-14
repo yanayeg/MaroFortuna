@@ -17,7 +17,7 @@ public class missionMenus4 : MonoBehaviour {
 			if (GUI.Button (new Rect (20, 40, 200, 20), missionListMenu [0].title)) {
 				Data.pickedMission = Data.missionList [0];
 				Debug.Log ("the picked missions is: " + Data.pickedMission.title);
-				Application.LoadLevel ("MissionSelect");
+				Application.LoadLevel ("DedeMission");
 			}
 			if (GUI.Button (new Rect (20, 80, 200, 20), missionListMenu [1].title)) {
 				Data.pickedMission = Data.missionList [1];
