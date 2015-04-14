@@ -46,7 +46,6 @@ public class Mission : MonoBehaviour{
 		this.isDone = isDone;
 
 	}
-
 	public bool runMission(Mission mission, List<Character> charList){
 		double chance = 50;
 		/*

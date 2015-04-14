@@ -15,6 +15,11 @@ public class missionDescription : MonoBehaviour {
 		foreach(Mission m in Data.missionList){
 			m.isListed = false;
 		}
+		//mark mission as done
+		foreach(Mission m in Data.missionList){
+			if(m.title == Data.pickedMission.title)
+				m.isDone = true;
+		}
 	
 	}
 	

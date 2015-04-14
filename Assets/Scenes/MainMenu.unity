@@ -905,6 +905,7 @@ MonoBehaviour:
   experience: 0
   status: 0
   description: 
+  isPicked: 0
 --- !u!4 &1737342690
 Transform:
   m_ObjectHideFlags: 0

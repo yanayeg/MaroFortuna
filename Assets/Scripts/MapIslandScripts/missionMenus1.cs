@@ -7,34 +7,65 @@ public class missionMenus1 : MonoBehaviour {
 	List<Mission> missionListMenu = new List<Mission> (); 
 
 	void DoWindow0(int windowID) {
-		if (missionListMenu.Count < 3) {
+		if (missionListMenu.Count == 0) {
 			if (GUI.Button (new Rect (20, 160, 200, 20), "Close")) {
 				doWindow0 = false;
 			}
 		} 
 		else {
-			// Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
-			if (GUI.Button (new Rect (20, 40, 200, 20), missionListMenu [0].title)) {
-				Data.pickedMission = Data.missionList [0];
-				Debug.Log ("the picked missions is: " + Data.pickedMission.title);
-				Application.LoadLevel ("DedeMission");
+			if(missionListMenu.Count == 3){
+				if (GUI.Button (new Rect (20, 40, 200, 20), missionListMenu [0].title)) {
+					Data.pickedMission = missionListMenu [0];
+					Debug.Log ("the picked missions is: " + Data.pickedMission.title);
+					Application.LoadLevel ("DedeMission");
+				}
+				if (GUI.Button (new Rect (20, 80, 200, 20), missionListMenu [1].title)) {
+					Data.pickedMission = missionListMenu[1];
+					Debug.Log ("the picked missions is: " + Data.pickedMission.title);
+					Application.LoadLevel ("DedeMission");
+				}
+				if (GUI.Button (new Rect (20, 120, 200, 20), missionListMenu [2].title)) {
+					Data.pickedMission = missionListMenu[2];
+					Debug.Log ("the picked missions is: " + Data.pickedMission.title);
+					Application.LoadLevel ("DedeMission");
+				}
+				//Close the panel.
+				if (GUI.Button (new Rect (20, 160, 200, 20), "Close")) {
+					doWindow0 = false;
+				}
 			}
-			if (GUI.Button (new Rect (20, 80, 200, 20), missionListMenu [1].title)) {
-				Data.pickedMission = Data.missionList [1];
-				Debug.Log ("the picked missions is: " + Data.pickedMission.title);
-				Application.LoadLevel ("DedeMission");
+			
+			if(missionListMenu.Count == 2){
+				if (GUI.Button (new Rect (20, 40, 200, 20), missionListMenu [0].title)) {
+					Data.pickedMission = missionListMenu [0];
+					Debug.Log ("the picked missions is: " + Data.pickedMission.title);
+					Application.LoadLevel ("DedeMission");
+				}
+				if (GUI.Button (new Rect (20, 80, 200, 20), missionListMenu [1].title)) {
+					Data.pickedMission = missionListMenu[1];
+					Debug.Log ("the picked missions is: " + Data.pickedMission.title);
+					Application.LoadLevel ("DedeMission");
+				}
+				//Close the panel.
+				if (GUI.Button (new Rect (20, 120, 200, 20), "Close")) {
+					doWindow0 = false;
+				}
 			}
-			if (GUI.Button (new Rect (20, 120, 200, 20), missionListMenu [2].title)) {
-				Data.pickedMission = Data.missionList [2];
-				Debug.Log ("the picked missions is: " + Data.pickedMission.title);
-				Application.LoadLevel ("DedeMission");
-			}
-			//Close the panel.
-			if (GUI.Button (new Rect (20, 160, 200, 20), "Close")) {
-				doWindow0 = false;
+			
+			if(missionListMenu.Count == 1){
+				if (GUI.Button (new Rect (20, 40, 200, 20), missionListMenu [0].title)) {
+					Data.pickedMission = missionListMenu[0];
+					Debug.Log ("the picked missions is: " + Data.pickedMission.title);
+					Application.LoadLevel ("DedeMission");
+				}
+				//Close the panel.
+				if (GUI.Button (new Rect (20, 160, 200, 20), "Close")) {
+					doWindow0 = false;
+				}
 			}
 		}
 	}
+
 
 	// Use this for initialization
 	void Start () {
