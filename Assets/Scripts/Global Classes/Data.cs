@@ -15,55 +15,55 @@ public class Data : MonoBehaviour {
 		Character c;
 		//MILITARY CHARACTERS
 		c = new Character ("Military", "Sitting Bull", Resources.Load("/Portrait.png") as Texture, 0, 1,
-		                   "Leader of the great tribes.");
+		                   "Leader of the great tribes.", false);
 		charList.Add (c);
 		c = new Character ("Military", "Sun Tzu the Tiger", Resources.Load ("/Portrait.png") as Texture, 0, 1,
-		                  "Wrote important military tactics in his novel, “The Art of Roar.");
+		                  "Wrote important military tactics in his novel, “The Art of Roar.", false);
 		charList.Add(c);
 		c = new Character ("Military", "Artemis the Wolf", Resources.Load ("/Portrait.png") as Texture, 0, 1,
-		                   " ");
+		                   " ", false);
 		charList.Add (c);
 		c = new Character ("Military", "Zorro the Fox", Resources.Load ("/Portrait.png") as Texture, 0, 1,
-		                   " ");
+		                   " ", false);
 		charList.Add (c);
 		//SCIENCE CHARACTERS
 		c = new Character ("Science", "Mousie Curie", Resources.Load ("/Portrait.png") as Texture, 0, 1,
-		                   "Won the Swiss Prize in her studies of radiated cheese curds.");
+		                   "Won the Swiss Prize in her studies of radiated cheese curds.", false);
 		charList.Add (c);
 		c = new Character ("Science", "Hathaway the Hare", Resources.Load ("/Portrait.png") as Texture, 0, 1,
-		                   "This black hat hacker named Hathaway.");
+		                   "This black hat hacker named Hathaway.", false);
 		charList.Add (c);
 		c = new Character ("Science", "Ram Descartes", Resources.Load ("/Portrait.png") as Texture, 0, 1,
-		                   "Mathematician and philisophist, most famous statement: If it fits, I sits.");
+		                   "Mathematician and philisophist, most famous statement: If it fits, I sits.", false);
 		charList.Add (c);
 		c = new Character ("Science", "Olympia the Owl", Resources.Load ("/Portrait.png") as Texture, 0, 1,
-		                   " ");
+		                   " ", false);
 		charList.Add (c);
 		//ESPIONAGE CHARACTERS
 		c = new Character ("Espionage", "Margreet the Bat", Resources.Load ("/Portrait.png") as Texture, 0, 1,
-		                   "A master of disguise and dancing.");
+		                   "A master of disguise and dancing.", false);
 		charList.Add (c);
 		c = new Character ("Espionage", "Pierre The Parrot", Resources.Load ("/Portrait.png") as Texture, 0, 1,
-		                   "Pierre the pickpocketing parrot.");
+		                   "Pierre the pickpocketing parrot.", false);
 		charList.Add (c);
 		c = new Character ("Espionage", "Roy the Boartender", Resources.Load ("/Portrait.png") as Texture, 0, 1,
-		                   "He hears a lot of gossip around the speakeasy.");
+		                   "He hears a lot of gossip around the speakeasy.", false);
 		charList.Add (c);
 		c = new Character ("Espionage", "Lucia the Crow", Resources.Load ("/Portrait.png") as Texture, 0, 1,
-		                   " ");
+		                   " ", false);
 		charList.Add (c);
 		//DIPLOMACY CHARACTERS
 		c = new Character ("Diplomacy", "Espresso the Dog", Resources.Load ("/Portrait.png") as Texture, 0, 1,
-		                   "He just wants to talk things out over some good coffee.");
+		                   "He just wants to talk things out over some good coffee.", false);
 		charList.Add (c);
 		c = new Character ("Diplomacy", "Octavia the Octopus", Resources.Load ("/Portrait.png") as Texture, 0, 1,
-		                   "He just wants to talk things out over some good coffee.");
+		                   "He just wants to talk things out over some good coffee.", false);
 		charList.Add (c);
 		c = new Character ("Diplomacy", "Eisenhower the Elk", Resources.Load ("/Portrait.png") as Texture, 0, 1,
-		                   " ");
+		                   " ", false);
 		charList.Add (c);
 		c = new Character ("Diplomacy", "Masako the Monkey", Resources.Load ("/Portrait.png") as Texture, 0, 1,
-		                   " ");
+		                   " ", false);
 		charList.Add (c);
 
 		//-----------------------------------RESOURCE CREATION SECTION--------------------------------------------//
@@ -184,6 +184,8 @@ public class Data : MonoBehaviour {
 						 "After sleuthing around various ruins, you find the same message encrypted into a wall on a neighboring island. With the help of the local villagers, you realize the message states \"we come in peace.\" The makers of the message are long gone, but the local villagers now trust you. Woo!",
 						 "You cannot figure out what the message says, no matter what you do. But it doesn't matter, because before you can guess that the message means \"stay away\" a ninja clan swoops out of nowhere and attacks! AH!", 
 						 2, "Diplomacy", "Espionage", "Military", "Science", 60, 2, "Espionage", d3, "None", false, false);
+
+		missionList.Add (m);
 
 		//this allows it to persist (don't delete please)
 		DontDestroyOnLoad (transform.gameObject);

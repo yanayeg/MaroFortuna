@@ -22,12 +22,12 @@ public class missionMenus1 : MonoBehaviour {
 			if (GUI.Button (new Rect (20, 80, 200, 20), missionListMenu [1].title)) {
 				Data.pickedMission = Data.missionList [1];
 				Debug.Log ("the picked missions is: " + Data.pickedMission.title);
-				Application.LoadLevel ("MissionSelect");
+				Application.LoadLevel ("DedeMission");
 			}
 			if (GUI.Button (new Rect (20, 120, 200, 20), missionListMenu [2].title)) {
 				Data.pickedMission = Data.missionList [2];
 				Debug.Log ("the picked missions is: " + Data.pickedMission.title);
-				Application.LoadLevel ("MissionSelect");
+				Application.LoadLevel ("DedeMission");
 			}
 			//Close the panel.
 			if (GUI.Button (new Rect (20, 160, 200, 20), "Close")) {
