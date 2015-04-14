@@ -72,7 +72,8 @@ public class Data : MonoBehaviour {
 		c = new Character ("Diplomacy", "Masako the Monkey", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   " ", false);
 		charList.Add (c);
-
+		//shuffle list
+		charList = ShuffleList (charList);
 		//-----------------------------------RESOURCE CREATION SECTION--------------------------------------------//
 		//create a list of resouces
 
@@ -196,6 +197,22 @@ public class Data : MonoBehaviour {
 		
 		//this allows it to persist (don't delete please)
 		DontDestroyOnLoad (transform.gameObject);
+	}
+
+	//shuffle method
+	private List<Character> ShuffleList(List<Character> inputList)
+	{
+		List<Character> randomList = new List<Character>();
+		System.Random r = new System.Random();
+		int randomIndex = 0;
+		while (inputList.Count > 0)
+		{
+			randomIndex = r.Next(0, inputList.Count); //Choose a random object in the list
+			randomList.Add(inputList[randomIndex]); //add it to the new, random list
+			inputList.RemoveAt(randomIndex); //remove to avoid duplicates
+		}
+		
+		return randomList; //return the new random list
 	}
 
 	// Use this for initialization
