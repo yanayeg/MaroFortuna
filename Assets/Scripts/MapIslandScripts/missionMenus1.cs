@@ -7,11 +7,10 @@ public class missionMenus1 : MonoBehaviour {
 	List<Mission> missionListMenu = new List<Mission> (); 
 
 	void DoWindow0(int windowID) {
-		if (missionListMenu.Count == 0) {
+		if (missionListMenu.Count < 3) {
 			if (GUI.Button (new Rect (20, 160, 200, 20), "Close")) {
 				doWindow0 = false;
 			}
-			
 		} 
 		else {
 			// Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
@@ -40,12 +39,14 @@ public class missionMenus1 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Data.missionList = ShuffleList (Data.missionList);
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < Data.missionList.Count; i++) {
 			if (Data.missionList [i].isListed == false && Data.missionList [i].isDone == false) {
 				Debug.Log("Listed " + Data.missionList[i].title);
 				Data.missionList[i].isListed = true;
 				missionListMenu.Add(Data.missionList [i]);
 			}
+			if(missionListMenu.Count == 3)
+				break;
 		}
 	}
 	// Update is called once per frame
