@@ -12,4 +12,9 @@ public class BullSelect : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	void OnMouseDown(){
+		Data.charList [0].setPicked ();
+		Debug.Log("Is picked " + Data.charList[0].isPicked);
+	}
 }

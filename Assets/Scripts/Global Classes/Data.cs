@@ -103,11 +103,11 @@ public class Data : MonoBehaviour {
 		                          "Science", "Diplomacy", 85, 1, "Military", m1, "None", false, false);
 		missionList.Add (m);
 		m = new Mission ("You Got to be Squidding Me", "You come across a ship stranded in shallow water. It has a faint but distinct signal of a SOS beacon. Your co-captain suggests planning a rescue mission",
-		                  		"Your crew was attacked by a giant squid inside the ship but sucessfully neutralized all hostile elements. The ship is is mostly intact and ready to salvage for supplies." ,
-		                  		"Your crew was unprepared for the giant squid inside the ship and some of your crew was injured, The ship exploded with ink as soon as your crew managed to get back on your ship." , 
+		                  		" Your crew was attacked by a giant squid inside the ship but sucessfully neutralized all hostile elements. The ship is is mostly intact and ready to salvage for supplies." ,
+		                  		" Your crew was unprepared for the giant squid inside the ship and some of your crew was injured, The ship exploded with ink as soon as your crew managed to get back on your ship." , 
 		                  		2, "Military", "Espionage", "Diplomacy", "Science", 60, 2, "Military", m2, "None", false, false);
 		missionList.Add (m);
-		m = new Mission ("Mars Attacks!","A neighboring planet sends over two ships filled with hostile squad members, angry because some debris from your ship had landed" +
+		m = new Mission ("Mars Attacks!","A neighboring planet sends over two ships filled with hostile squad members, angry because some debris from your ship had landed " +
 						 		"on their planet and destroyed one of their cities. They cannot be calmed down, and will not back down from a fight. You have no choice but to send your best fighters out on this mission!",
 						 		"As I always say, it's better to have no enemies than to have enemies at all. After successfully defeating the war-minded species, you ransack their ships and find many supplies. Plus, you get to keep their two ships! Success!",
 						 		"You win some, and you lose some. Unfortunately, you lost this battle. After your enemies captured some supplies to bring back to their home planet, they warn you not to mess with them or they will come back... with MORE forces! Yikes!",
@@ -116,12 +116,12 @@ public class Data : MonoBehaviour {
 
 		//------------------------------------- SCIENCE MISSIONS -----------------------------------------------//
 		
-		m = new Mission("Portal to the Unknown","You see a weird set of machines as you approach this island. As you look closer it looks like some kind of modern portal. You're not sure where it may lead you." + 
+		m = new Mission("Portal to the Unknown","You see a weird set of machines as you approach this island. As you look closer it looks like some kind of modern portal. You're not sure where it may lead you. " + 
 							"There's a chance if you send some crew members into this portal that it could lead to some big rewards.",
-							"After waiting for what seems like forever for your crew members to return from the portal you are worried about if they ever will come back. However, as the day almost closes and you" +
-							"are about to give up, your crew members come back out the portal carrying fancy new laser guns and high tech utility belts. It looks like their smarts helped them navigate through the" +
+							"After waiting for what seems like forever for your crew members to return from the portal you are worried about if they ever will come back. However, as the day almost closes and you " +
+							"are about to give up, your crew members come back out the portal carrying fancy new laser guns and high tech utility belts. It looks like their smarts helped them navigate through the " +
 							"alien universe they visited and helped them come back with some equipment.", 
-							"After waiting for what seems like forever for your crew members to return from the portal you are worried that they may never come back. However, as the day almost closes and you are" +
+							"After waiting for what seems like forever for your crew members to return from the portal you are worried that they may never come back. However, as the day almost closes and you are " +
 							"about to give up you see a bright spark come from the portal. All of a sudden your members are thrown out of the portal. It seems like they don't remember anything that just happened to them. They must have been brain wiped before they were kicked out.",
 							 2, "Science", "Espionage", "Military", "Diplomacy", 80, 1, "Science", s1, "None", false, false);
 		missionList.Add (m);
@@ -130,15 +130,15 @@ public class Data : MonoBehaviour {
 						 "Your crew couldn't come up with a solution and the mining company had to call in help from their holding company. They thank you for your efforts, despite the lack of progress, but you recieve no reward. ",
 						  1, "Science", "Espionage", "Military", "Diplomacy", 60, 2, "Science", s2, "None", false, false);
 		missionList.Add (m);
-		m = new Mission("Don't Poison Me, Bro!", "A strange, purple liquid is found oozing out of a nearby water source. This gives rise to a rumor that poison is being pumped into the water supply and many people become outraged." + 
-						 "However, it is up to you to investigate and figure out what is going on.", "After running some tests in the lab, you come to find that the substance found in the water supply is completely harmless. In fact," + 
+		m = new Mission("Don't Poison Me, Bro!", "A strange, purple liquid is found oozing out of a nearby water source. This gives rise to a rumor that poison is being pumped into the water supply and many people become outraged. " + 
+						 "However, it is up to you to investigate and figure out what is going on.", "After running some tests in the lab, you come to find that the substance found in the water supply is completely harmless. In fact, " + 
 						 "the water tastes even better, and apparently has some healthier properties. Yay!",
 						 "After running some tests in the lab, you come to find that the substance found in the water supply actually has traces of rat poison in it! Now half of the inhabitants on this planet do not trust you. Boo!",
 						  1, "Science", "Espionage", "Diplomacy", "Military", 80, 1, "Science", s3, "None", false, false); 
 
 		missionList.Add (m);
 		m = new Mission("Quick Before the Volcano Blows!", "You hear an explosion in the distance. After approaching the area, you see weird light emitting from a rock formation. Not knowing if the area is dangerous or not, you decide to explore anyways.",
-						 "You realize the light being emitted came from a small disco party being held within the nearby dormant volcano. They explain that the explosion formed when they started throwing around some" + 
+						 "You realize the light being emitted came from a small disco party being held within the nearby dormant volcano. They explain that the explosion formed when they started throwing around some " + 
 						 "old rocks they found lying around the floor. Intrigued, you decide to stay and study the properties of this \"dormant\" volcano.", 
 						 "After exploring for a while, you realize the area is in the way of multiple, dangerous magnetic fields. All of your equipment is damaged!",
 						  3, "Science", "Diplomacy", "Military", "Espionage", 60, 2, "Science", s4, "None", false, false);

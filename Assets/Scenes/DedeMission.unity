@@ -190,7 +190,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 35.8865585
 --- !u!1001 &344831064
 Prefab:
   m_ObjectHideFlags: 0
@@ -289,7 +289,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 35.8865585
 --- !u!1001 &374850460
 Prefab:
   m_ObjectHideFlags: 0
@@ -388,7 +388,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 35.8865585
 --- !u!224 &413721590
 RectTransform:
   m_PrefabParentObject: {fileID: 22445632, guid: 15b09002651d95345b48a131ee9c0d17,
@@ -701,7 +701,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 35.8865585
 --- !u!224 &552028639
 RectTransform:
   m_PrefabParentObject: {fileID: 22497182, guid: 4d28095a463b34f4289939b5dcc36f8d,
@@ -852,9 +852,28 @@ Prefab:
       propertyPath: m_Pivot.y
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 5879466, guid: b97e17b16c9d85d449bb30cc8de7ed33, type: 2}
+      propertyPath: m_Radius
+      value: 35.8865623
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b97e17b16c9d85d449bb30cc8de7ed33, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &666713094
+GameObject:
+  m_PrefabParentObject: {fileID: 136380, guid: b97e17b16c9d85d449bb30cc8de7ed33, type: 2}
+  m_PrefabInternal: {fileID: 666713093}
+--- !u!114 &666713095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 666713094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf4822593ee05e941822c3eaeb90ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &978799259
 RectTransform:
   m_PrefabParentObject: {fileID: 22457136, guid: 98bfe8a739f855d4789adac56f446b23,
@@ -1036,7 +1055,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 35.8865585
 --- !u!1 &1275887207
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,7 +1331,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 35.8865585
 --- !u!224 &1403895309
 RectTransform:
   m_PrefabParentObject: {fileID: 22479542, guid: b97e17b16c9d85d449bb30cc8de7ed33,
@@ -1769,7 +1788,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 35.8865585
 --- !u!1001 &2019183597
 Prefab:
   m_ObjectHideFlags: 0
@@ -1868,7 +1887,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 35.8865585
 --- !u!1001 &2055811413
 Prefab:
   m_ObjectHideFlags: 0
@@ -1967,4 +1986,4 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 35.8865585
