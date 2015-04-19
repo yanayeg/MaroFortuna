@@ -33,14 +33,22 @@ public class successText : MonoBehaviour {
 			guiText4.text = "";
 			guiText5.text = "";
 			guiText6.text = "";
-			if(Data.pickedMission.rewardRsc.type == "Military")
+			if(Data.pickedMission.rewardRsc.type == "Military"){
 				guiText3.text = "+" + Data.pickedMission.rewardRsc.quantity + " Military Resources";
-			if(Data.pickedMission.rewardRsc.type == "Science")
+				Data.militaryResCount += Data.pickedMission.rewardRsc.quantity;
+			}
+			if(Data.pickedMission.rewardRsc.type == "Science"){
 				guiText4.text = "+" + Data.pickedMission.rewardRsc.quantity + " Science Resources";
-			if(Data.pickedMission.rewardRsc.type == "Espionage")
+				Data.scienceResCount += Data.pickedMission.rewardRsc.quantity;
+			}
+			if(Data.pickedMission.rewardRsc.type == "Espionage"){
 				guiText5.text = "+" + Data.pickedMission.rewardRsc.quantity + " Espionage Resources";
-			if(Data.pickedMission.rewardRsc.type == "Diplomacy")
+				Data.espionageResCount += Data.pickedMission.rewardRsc.quantity;
+			}
+			if(Data.pickedMission.rewardRsc.type == "Diplomacy"){
 				guiText6.text = "+" + Data.pickedMission.rewardRsc.quantity + " Diplomacy Resources";
+				Data.diplomacyResCount += Data.pickedMission.rewardRsc.quantity;
+			}
 
 
 
