@@ -26,6 +26,7 @@ public class MouseSelect : MonoBehaviour {
 		
 		if (available) {
 			if (!(Data.currentChars [i].isPicked) && (Data.currentCrewSize < Data.pickedMission.squadSize)) {
+				GameObject.Find("ScienceMouse").GetComponent<SpriteRenderer>().color = Color.green;
 				Data.activeMissionChars.Add (Data.currentChars [i]);
 				Data.currentCrewSize += 1;
 				Data.currentChars [i].setPicked ();

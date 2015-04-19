@@ -15,6 +15,15 @@ public class missionDescription : MonoBehaviour {
 		foreach(Mission m in Data.missionList){
 			m.isListed = false;
 		}
+
+
+
+
+
+		//GameObject.Find("EspionageBat").GetComponent<SpriteRenderer>().enabled = false;
+
+
+
 	}
 	
 	// Update is called once per frame
