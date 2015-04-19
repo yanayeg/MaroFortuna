@@ -13,8 +13,8 @@ public class Data : MonoBehaviour {
 	public static int currentCrewSize;
 	public static int militaryResCount;
 	public static int espionageResCount;
-	public static int diplomacyCount;
-	public static int scienceCount;
+	public static int diplomacyResCount;
+	public static int scienceResCount;
 
 
 	void Awake(){
@@ -84,7 +84,7 @@ public class Data : MonoBehaviour {
 		Resource m3 = new Resource ("2 Ships", "Military", 500);
 		Resource m4 = new Resource ("Tactical Knowledge", "Military", 100);
 		Resource m5 = new Resource ("The loose change of war", "Military", 500);
-		Resource m6 = new Resource ("Gold Bars", "Military", "Military", 300);
+		Resource m6 = new Resource ("Gold Bars", "Military", 300);
 
 		//Science
 		Resource s1 = new Resource ("Alien Technology", "Science", 100);
@@ -227,6 +227,10 @@ public class Data : MonoBehaviour {
 		missionList.Add (m);
 
 		dayCounter = 1;
+		militaryResCount = 0;
+		scienceResCount = 0;
+		espionageResCount = 0;
+		diplomacyResCount = 0;
 		//this allows it to persist (don't delete please)
 		DontDestroyOnLoad (transform.gameObject);
 	}
