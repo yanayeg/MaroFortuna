@@ -128,11 +128,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22448336, guid: 36161b866351c2d4fb4d0e8886da50fa, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 254.5
+      value: -196
       objectReference: {fileID: 0}
     - target: {fileID: 22448336, guid: 36161b866351c2d4fb4d0e8886da50fa, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 99
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 22448336, guid: 36161b866351c2d4fb4d0e8886da50fa, type: 2}
       propertyPath: m_SizeDelta.x
@@ -173,8 +173,8 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 190332, guid: 36161b866351c2d4fb4d0e8886da50fa, type: 2}
   m_PrefabInternal: {fileID: 343440404}
---- !u!58 &343440406
-CircleCollider2D:
+--- !u!61 &343440406
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -185,7 +185,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 35.8865585
+  m_Size: {x: 64, y: 73}
 --- !u!224 &343440407
 RectTransform:
   m_PrefabParentObject: {fileID: 22448336, guid: 36161b866351c2d4fb4d0e8886da50fa,
@@ -243,11 +243,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22473714, guid: 7c70fea584f77384e8194b4811c5eb9f, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 23
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 22473714, guid: 7c70fea584f77384e8194b4811c5eb9f, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -24
+      value: -79.0000153
       objectReference: {fileID: 0}
     - target: {fileID: 22473714, guid: 7c70fea584f77384e8194b4811c5eb9f, type: 2}
       propertyPath: m_SizeDelta.x
@@ -288,8 +288,8 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 191132, guid: 7c70fea584f77384e8194b4811c5eb9f, type: 2}
   m_PrefabInternal: {fileID: 344831064}
---- !u!58 &344831066
-CircleCollider2D:
+--- !u!61 &344831066
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -300,7 +300,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 35.8865585
+  m_Size: {x: 64, y: 73}
 --- !u!224 &344831067
 RectTransform:
   m_PrefabParentObject: {fileID: 22473714, guid: 7c70fea584f77384e8194b4811c5eb9f,
@@ -347,11 +347,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22433782, guid: 2423c22ffb955254c8174dd2489f0ac1, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -72
+      value: -129
       objectReference: {fileID: 0}
     - target: {fileID: 22433782, guid: 2423c22ffb955254c8174dd2489f0ac1, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -26
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 22433782, guid: 2423c22ffb955254c8174dd2489f0ac1, type: 2}
       propertyPath: m_SizeDelta.x
@@ -392,8 +392,8 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 107328, guid: 2423c22ffb955254c8174dd2489f0ac1, type: 2}
   m_PrefabInternal: {fileID: 374850460}
---- !u!58 &374850462
-CircleCollider2D:
+--- !u!61 &374850462
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -404,7 +404,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 35.8865585
+  m_Size: {x: 64, y: 73}
 --- !u!224 &374850463
 RectTransform:
   m_PrefabParentObject: {fileID: 22433782, guid: 2423c22ffb955254c8174dd2489f0ac1,
@@ -535,11 +535,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22404584, guid: d42f2a6106b2f75489fa762243a1b117, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -169
+      value: -62
       objectReference: {fileID: 0}
     - target: {fileID: 22404584, guid: d42f2a6106b2f75489fa762243a1b117, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -26
+      value: -156.000031
       objectReference: {fileID: 0}
     - target: {fileID: 22404584, guid: d42f2a6106b2f75489fa762243a1b117, type: 2}
       propertyPath: m_SizeDelta.x
@@ -580,8 +580,8 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 188952, guid: d42f2a6106b2f75489fa762243a1b117, type: 2}
   m_PrefabInternal: {fileID: 512640324}
---- !u!58 &512640326
-CircleCollider2D:
+--- !u!61 &512640326
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -592,7 +592,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 35.8865585
+  m_Size: {x: 64, y: 73}
 --- !u!224 &512640327
 RectTransform:
   m_PrefabParentObject: {fileID: 22404584, guid: d42f2a6106b2f75489fa762243a1b117,
@@ -705,11 +705,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22479542, guid: b97e17b16c9d85d449bb30cc8de7ed33, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 165
+      value: -264
       objectReference: {fileID: 0}
     - target: {fileID: 22479542, guid: b97e17b16c9d85d449bb30cc8de7ed33, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 6
+      value: -79
       objectReference: {fileID: 0}
     - target: {fileID: 22479542, guid: b97e17b16c9d85d449bb30cc8de7ed33, type: 2}
       propertyPath: m_SizeDelta.x
@@ -755,7 +755,8 @@ Prefab:
       propertyPath: m_UsedByEffector
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5879466, guid: b97e17b16c9d85d449bb30cc8de7ed33, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b97e17b16c9d85d449bb30cc8de7ed33, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &666713094
@@ -778,6 +779,19 @@ RectTransform:
   m_PrefabParentObject: {fileID: 22479542, guid: b97e17b16c9d85d449bb30cc8de7ed33,
     type: 2}
   m_PrefabInternal: {fileID: 666713093}
+--- !u!61 &666713097
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 666713094}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 64, y: 73}
 --- !u!1 &674964190
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,7 +823,7 @@ RectTransform:
   m_RootOrder: 12
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -98, y: -160}
+  m_AnchoredPosition: {x: 213, y: 68}
   m_SizeDelta: {x: 84, y: 48}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &674964192
@@ -958,11 +972,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22445172, guid: c4de9525f7a1a80439e30a2a4236c8de, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 254.5
+      value: -129
       objectReference: {fileID: 0}
     - target: {fileID: 22445172, guid: c4de9525f7a1a80439e30a2a4236c8de, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -84
+      value: -156
       objectReference: {fileID: 0}
     - target: {fileID: 22445172, guid: c4de9525f7a1a80439e30a2a4236c8de, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1003,8 +1017,8 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 148572, guid: c4de9525f7a1a80439e30a2a4236c8de, type: 2}
   m_PrefabInternal: {fileID: 1203601520}
---- !u!58 &1203601522
-CircleCollider2D:
+--- !u!61 &1203601522
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -1015,7 +1029,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 35.8865585
+  m_Size: {x: 64, y: 73}
 --- !u!224 &1203601523
 RectTransform:
   m_PrefabParentObject: {fileID: 22445172, guid: c4de9525f7a1a80439e30a2a4236c8de,
@@ -1233,11 +1247,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22479512, guid: 6cb858a70aed5e84391198f18dbc3d5b, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 165
+      value: -264
       objectReference: {fileID: 0}
     - target: {fileID: 22479512, guid: 6cb858a70aed5e84391198f18dbc3d5b, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 99
+      value: -156
       objectReference: {fileID: 0}
     - target: {fileID: 22479512, guid: 6cb858a70aed5e84391198f18dbc3d5b, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1278,8 +1292,8 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 177476, guid: 6cb858a70aed5e84391198f18dbc3d5b, type: 2}
   m_PrefabInternal: {fileID: 1344673994}
---- !u!58 &1344673996
-CircleCollider2D:
+--- !u!61 &1344673996
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -1290,7 +1304,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 35.8865585
+  m_Size: {x: 64, y: 73}
 --- !u!224 &1344673997
 RectTransform:
   m_PrefabParentObject: {fileID: 22479512, guid: 6cb858a70aed5e84391198f18dbc3d5b,
@@ -1486,7 +1500,7 @@ RectTransform:
   m_RootOrder: 10
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 9.49999619, y: -152.999985}
+  m_AnchoredPosition: {x: 214, y: 129}
   m_SizeDelta: {x: 113, y: 46}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &1920339418
@@ -1581,11 +1595,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22457136, guid: 98bfe8a739f855d4789adac56f446b23, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 165
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 22457136, guid: 98bfe8a739f855d4789adac56f446b23, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -84
+      value: -155.899994
       objectReference: {fileID: 0}
     - target: {fileID: 22457136, guid: 98bfe8a739f855d4789adac56f446b23, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1626,8 +1640,8 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 170618, guid: 98bfe8a739f855d4789adac56f446b23, type: 2}
   m_PrefabInternal: {fileID: 2017815153}
---- !u!58 &2017815155
-CircleCollider2D:
+--- !u!61 &2017815155
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -1638,7 +1652,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 35.8865585
+  m_Size: {x: 64, y: 73}
 --- !u!224 &2017815156
 RectTransform:
   m_PrefabParentObject: {fileID: 22457136, guid: 98bfe8a739f855d4789adac56f446b23,
@@ -1685,11 +1699,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22497182, guid: 4d28095a463b34f4289939b5dcc36f8d, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 252
+      value: -196
       objectReference: {fileID: 0}
     - target: {fileID: 22497182, guid: 4d28095a463b34f4289939b5dcc36f8d, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 7
+      value: -156
       objectReference: {fileID: 0}
     - target: {fileID: 22497182, guid: 4d28095a463b34f4289939b5dcc36f8d, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1730,8 +1744,8 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 118422, guid: 4d28095a463b34f4289939b5dcc36f8d, type: 2}
   m_PrefabInternal: {fileID: 2019183597}
---- !u!58 &2019183599
-CircleCollider2D:
+--- !u!61 &2019183599
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -1742,7 +1756,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 35.8865585
+  m_Size: {x: 64, y: 73}
 --- !u!224 &2019183600
 RectTransform:
   m_PrefabParentObject: {fileID: 22497182, guid: 4d28095a463b34f4289939b5dcc36f8d,
@@ -1800,11 +1814,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22445632, guid: 15b09002651d95345b48a131ee9c0d17, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -254
+      value: -62
       objectReference: {fileID: 0}
     - target: {fileID: 22445632, guid: 15b09002651d95345b48a131ee9c0d17, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -26
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 22445632, guid: 15b09002651d95345b48a131ee9c0d17, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1845,8 +1859,8 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 167264, guid: 15b09002651d95345b48a131ee9c0d17, type: 2}
   m_PrefabInternal: {fileID: 2055811413}
---- !u!58 &2055811415
-CircleCollider2D:
+--- !u!61 &2055811415
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -1857,7 +1871,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 35.8865585
+  m_Size: {x: 64, y: 73}
 --- !u!224 &2055811416
 RectTransform:
   m_PrefabParentObject: {fileID: 22445632, guid: 15b09002651d95345b48a131ee9c0d17,
@@ -1896,7 +1910,7 @@ RectTransform:
   m_RootOrder: 15
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -229, y: -153}
+  m_AnchoredPosition: {x: 212, y: 15}
   m_SizeDelta: {x: 115, y: 46}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &2067552193
@@ -2031,7 +2045,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f6ded9496941b8d479d23d9648659f21, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 95b63661d0b404619bf14a326f2676b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &2070514763
 Prefab:
