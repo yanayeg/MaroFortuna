@@ -14,16 +14,22 @@ public class MouseSelect : MonoBehaviour {
 	}
 	
 	void OnMouseDown(){
+		
+		bool available = false;
 		int i;
 		for (i = 0; i < Data.currentChars.Count; i++) {
-			if (Data.currentChars[i].charName == "Mousie Curie")
+			if (Data.currentChars[i].charName == "Mousie Curie"){
+				available = true;
 				break;
+			}
 		}
 		
-		if (!(Data.currentChars[i].isPicked) && (Data.currentCrewSize < Data.pickedMission.squadSize)) {
-			Data.activeMissionChars.Add (Data.currentChars [i]);
-			Data.currentCrewSize += 1;
-			Data.currentChars[i].setPicked();
+		if (available) {
+			if (!(Data.currentChars [i].isPicked) && (Data.currentCrewSize < Data.pickedMission.squadSize)) {
+				Data.activeMissionChars.Add (Data.currentChars [i]);
+				Data.currentCrewSize += 1;
+				Data.currentChars [i].setPicked ();
+			}
 		}
 	}
 }
