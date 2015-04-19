@@ -73,20 +73,26 @@ public class Data : MonoBehaviour {
 		//-----------------------------------RESOURCE CREATION SECTION--------------------------------------------//
 		//create a list of resouces
 
-		
+		//Military
 		Resource m1 = new Resource ("Raw Materials", "Military", 100);
 		Resource m2 = new Resource ("Metal", "Military", 100);
 		Resource m3 = new Resource ("2 Ships", "Military", 500);
+		Resource m4 = new Resource ("Tactical Knowledge", "Military", 100);
+		Resource m5 = new Resource ("The loose change of war", "Military", 500);
+		Resource m6 = new Resource ("Gold Bars", "Military", "Military", 300);
 
+		//Science
 		Resource s1 = new Resource ("Alien Technology", "Science", 100);
 		Resource s2 = new Resource ("Potions", "Science", 100);
 		Resource s3 = new Resource ("Chemical Knowledge", "Science", 100);
 		Resource s4 = new Resource ("Rock Samples", "Science", 100);
 
+		//Espionage
 		Resource e1 = new Resource ("Cold hard cash", "Espionage", 100);
 		Resource e2 = new Resource ("Fishing Secrets", "Espionage", 100);
 		Resource e3 = new Resource ("Miniture Mama Money", "Espionage", 100);
 
+		//Diplomacy
 		Resource d1 = new Resource ("Flock of flavorful fish", "Diplomacy", 100);
 		Resource d2 = new Resource ("Gold", "Diplomacy", 100);
 		Resource d3 = new Resource ("Favor of the locals", "Diplomacy", 100);
@@ -117,6 +123,24 @@ public class Data : MonoBehaviour {
 						 		"You win some, and you lose some. Unfortunately, you lost this battle. After your enemies captured some supplies to bring back to their home planet, they warn you not to mess with them or they will come back... with MORE forces! Yikes!",
 						   		3, "Military", "Espionage", "Diplomacy", "Science", 50, 3, "Military", m3, "None", false, false);
 		missionList.Add (m);
+
+		m = new Mission ("The Tides of March", "A young man approaches your ship seeking mercenaries. His uncle, the emperor, was murdered by a group of his best friends, and he desires vengeance. He's willing to pay for your assistance. Send some warriors to help his cause!",
+						 "The opposing leaders, at the sight of your warriors, killed themselves in despair. Their sole surviving leader fled on a small boat. All in all, the victory was pretty effortless.", 
+						 "Your band of mercernaries was routed! The enemy leaders, believing the day to be lost, killed themselves pretty early in the battle. Their much-more-intelligent lieutenants took command and turned the tide of the battle.",
+						 3, "Military", "Science", "Espionage", "Diplomacy", 85, 1, "Military", m5, "None", false, false); 
+		missionList.Add (m);
+
+		m = new Mission ("The Fallen Colossus", "As you approach the nearby island, a large statue overseeing their harbor tumbles into the ocean with a thunderous groan. The natives blame you for the misfortune, and demand you send some burly crew members to help clear the wreckage. Or at least help them repair the broken statue.",
+						 "Your crew toils late into the night, but the wreckage has been dredged from the harbor and the restoration work is already well underway. This society has produced some surprisingly advanced engineers. As thanks, they share some of their knowledge with you.",
+						 "Your weary crew tries to assist with the recovery efforts, but the statue previously overlooking the harbor was too large and complex for them to handle. Embarassed for you, the natives ask you politely to leave while they clean up the mess.",
+						 4, "Military", "Science", "Espionage", "Diplomacy", 60, 2 , "Military", m4, "None", false, false);
+		missionList.Add (m);
+
+		m = new Mission ("Do Well", "A local hero from the island approaches your ship and demands that you send her someone to fight. For too long she has lived amongst the weaklings on this island. Now that you're here, she hopes you can alleviate her ennui.",
+						 "The duel lasts the majority of the afternoon, neither combatant willing to give the other an inch. Striking surely and swiftly, your crew member smiles as the village's hero finally falls. The villagers shower your crew in gold and the deck of your ship is carpeted in roses.",
+						 "The local hero makes quick work of your crew member. Smirking, the hero watches as they slink back to your ship, defeated.",
+						 1, "Military", "Espionage", "Diplomacy", "Science", 40, 3, "Military", m6, "None", false, false);
+		missionList.Add (m);				 						 		
 
 		//------------------------------------- SCIENCE MISSIONS -----------------------------------------------//
 		
