@@ -19,7 +19,6 @@ public class Data : MonoBehaviour {
 		//MILITARY CHARACTERS
 		c = new Character ("Military", "Sitting Bull", Resources.Load("MilitaryTiger.prefab") as Sprite, 0, 1,
 		                   "Leader of the great tribes.", false);
-		charList.Add (c);
 		currentChars.Add (c);
 		c = new Character ("Military", "Sun Tzu the Tiger", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                  "Wrote important military tactics in his novel, “The Art of Roar.", false);
@@ -39,7 +38,6 @@ public class Data : MonoBehaviour {
 		charList.Add (c);
 		c = new Character ("Science", "Ram Descartes", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   "Mathematician and philisophist, most famous statement: If it fits, I sits.", false);
-		charList.Add (c);
 		currentChars.Add (c);
 		c = new Character ("Science", "Olympia the Owl", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   " ", false);
@@ -47,7 +45,6 @@ public class Data : MonoBehaviour {
 		//ESPIONAGE CHARACTERS
 		c = new Character ("Espionage", "Margreet the Bat", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   "A master of disguise and dancing.", false);
-		charList.Add (c);
 		currentChars.Add (c);
 		c = new Character ("Espionage", "Pierre The Parrot", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   "Pierre the pickpocketing parrot.", false);
@@ -67,7 +64,6 @@ public class Data : MonoBehaviour {
 		charList.Add (c);
 		c = new Character ("Diplomacy", "Eisenhower the Elk", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   " ", false);
-		charList.Add (c);
 		currentChars.Add (c);
 		c = new Character ("Diplomacy", "Masako the Monkey", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   " ", false);

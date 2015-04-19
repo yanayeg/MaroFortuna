@@ -1442,6 +1442,7 @@ GameObject:
   - 222: {fileID: 1840133562}
   - 114: {fileID: 1840133561}
   - 114: {fileID: 1840133560}
+  - 114: {fileID: 1840133564}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1488,8 +1489,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1920339420}
-        m_MethodName: LoadScene
+      - m_Target: {fileID: 1840133564}
+        m_MethodName: DeployLoadScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1547,6 +1548,17 @@ RectTransform:
   m_AnchoredPosition: {x: 214, y: 129}
   m_SizeDelta: {x: 113, y: 46}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &1840133564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1840133559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4dad7b76d7f4e45a84aaeeaa410769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1920339418
 GameObject:
   m_ObjectHideFlags: 0
