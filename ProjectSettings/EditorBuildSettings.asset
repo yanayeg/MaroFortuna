@@ -19,3 +19,13 @@ EditorBuildSettings:
     path: Assets/Scenes/DedeMission.unity
   - enabled: 1
     path: Assets/Scenes/FailResults.unity
+  - enabled: 1
+    path: Assets/Scenes/DipWin.unity
+  - enabled: 1
+    path: Assets/Scenes/EspWin.unity
+  - enabled: 1
+    path: Assets/Scenes/MilWin.unity
+  - enabled: 1
+    path: Assets/Scenes/SciWin.unity
+  - enabled: 1
+    path: Assets/Scenes/NoWin.unity
