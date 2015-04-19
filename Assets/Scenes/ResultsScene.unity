@@ -234,8 +234,8 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 303.25, y: -128}
-  m_SizeDelta: {x: 155.5, y: 31}
+  m_AnchoredPosition: {x: 296.75, y: -128}
+  m_SizeDelta: {x: 163.5, y: 31}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &151104612
 MonoBehaviour:
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 13
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 13
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -416,8 +416,8 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 303.25, y: 24}
-  m_SizeDelta: {x: 155.5, y: 31}
+  m_AnchoredPosition: {x: 296.75, y: 24}
+  m_SizeDelta: {x: 163.5, y: 31}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &467771426
 GameObject:
@@ -516,8 +516,8 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 303.25, y: -54}
-  m_SizeDelta: {x: 155.5, y: 31}
+  m_AnchoredPosition: {x: 296.75, y: -54}
+  m_SizeDelta: {x: 163.5, y: 31}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &596175720
 MonoBehaviour:
@@ -534,7 +534,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 13
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -857,8 +857,8 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 303.25, y: -208}
-  m_SizeDelta: {x: 155.5, y: 31}
+  m_AnchoredPosition: {x: 296.75, y: -208}
+  m_SizeDelta: {x: 163.5, y: 31}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1328373256
 MonoBehaviour:
@@ -875,7 +875,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 13
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
