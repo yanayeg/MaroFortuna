@@ -11,6 +11,11 @@ public class Data : MonoBehaviour {
 	public static Mission pickedMission;
 	public static List<Character> activeMissionChars = new List<Character> ();   //list for characters sent on a mission
 	public static int currentCrewSize;
+	public static int militaryResCount;
+	public static int espionageResCount;
+	public static int diplomacyCount;
+	public static int scienceCount;
+
 
 	void Awake(){
 		//--------------------------------------CHARACTER CREATION SECTION-------------------------------------------//
@@ -46,7 +51,7 @@ public class Data : MonoBehaviour {
 		c = new Character ("Espionage", "Margreet the Bat", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   "A master of disguise and dancing.", false);
 		currentChars.Add (c);
-		c = new Character ("Espionage", "Pierre The Parrot", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
+		c = new Character ("Espionage", "Pierre the Parrot", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   "Pierre the pickpocketing parrot.", false);
 		charList.Add (c);
 		c = new Character ("Espionage", "Roy the Boartender", Resources.Load ("/Portrait.png") as Sprite, 0, 1,

@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class TigerSelect : MonoBehaviour {
+public class FoxSelect : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
@@ -18,7 +18,7 @@ public class TigerSelect : MonoBehaviour {
 		bool available = false;
 		int i;
 		for (i = 0; i < Data.currentChars.Count; i++) {
-			if (Data.currentChars[i].charName == "Sun Tzu the Tiger"){
+			if (Data.currentChars[i].charName == "Zorro the Fox"){
 				available = true;
 				break;
 			}
@@ -26,7 +26,7 @@ public class TigerSelect : MonoBehaviour {
 		
 		if (available) {
 			if (!(Data.currentChars [i].isPicked) && (Data.currentCrewSize < Data.pickedMission.squadSize)) {
-				GameObject.Find("Sun Tzu the Tiger").GetComponent<SpriteRenderer>().color = Color.green;
+				GameObject.Find("Zorro the Fox").GetComponent<SpriteRenderer>().color = Color.green;
 				Data.activeMissionChars.Add (Data.currentChars [i]);
 				Data.currentCrewSize += 1;
 				Data.currentChars [i].setPicked ();

@@ -70,6 +70,7 @@ public class missionMenus1 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
 		Text guiText1 = GameObject.Find("DayCounter").GetComponent<Text>();
 		guiText1.text = "Day: " + Data.dayCounter;
 
@@ -86,7 +87,6 @@ public class missionMenus1 : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		
 	}
 	
 	void OnMouseDown (){

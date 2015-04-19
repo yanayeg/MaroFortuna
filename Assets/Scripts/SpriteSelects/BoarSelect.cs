@@ -7,7 +7,7 @@ public class BoarSelect : MonoBehaviour {
 	void Start () {
 		
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		
@@ -26,7 +26,7 @@ public class BoarSelect : MonoBehaviour {
 		
 		if (available) {
 			if (!(Data.currentChars [i].isPicked) && (Data.currentCrewSize < Data.pickedMission.squadSize)) {
-				GameObject.Find("EspionageBoar").GetComponent<SpriteRenderer>().color = Color.green;
+				GameObject.Find("Roy the Boartender").GetComponent<SpriteRenderer>().color = Color.green;
 				Data.activeMissionChars.Add (Data.currentChars [i]);
 				Data.currentCrewSize += 1;
 				Data.currentChars [i].setPicked ();
