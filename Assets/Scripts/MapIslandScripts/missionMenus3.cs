@@ -93,7 +93,7 @@ public class missionMenus2 : MonoBehaviour {
 	void OnGUI() {
 		//doWindow0 = GUI.Toggle(new Rect(10, 10, 100, 20), doWindow0, "Window 0");
 		if (doWindow0) {
-			GUI.Window (0, new Rect (300, 100, 250, 200), DoWindow0, "Missions");
+			GUI.Window (0, new Rect (280, 180, 250, 200), DoWindow0, "Missions");
 		}
 		
 	}
