@@ -9,12 +9,14 @@ public class TriggeredEvent : MonoBehaviour {
 	void Start () {
 		if(Data.dayCounter == 8){
 			doWindowBadTrigger = true;
-			//we take away gold Data.diplomacyCount -=10;
+			//we take away gold 
+			Data.diplomacyResCount -=10;
 		}
 
 		if (Data.dayCounter == 16) {
 			doWindowGoodTrigger = true;
-			//we add a fish Data.scienceCount +=5;
+			//we add a fish 
+			Data.scienceResCount +=5;
 		}
 	}
 
