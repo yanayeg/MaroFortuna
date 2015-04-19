@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -86,6 +86,7 @@ public class Data : MonoBehaviour {
 		Resource s2 = new Resource ("Potions", "Science", 100);
 		Resource s3 = new Resource ("Chemical Knowledge", "Science", 100);
 		Resource s4 = new Resource ("Rock Samples", "Science", 100);
+		Resource s5 = new Resource ("Science Materials", "Science", 500);
 
 		//Espionage
 		Resource e1 = new Resource ("Cold hard cash", "Espionage", 100);
@@ -171,6 +172,11 @@ public class Data : MonoBehaviour {
 						 "After exploring for a while, you realize the area is in the way of multiple, dangerous magnetic fields. All of your equipment is damaged!",
 						  3, "Science", "Diplomacy", "Military", "Espionage", 60, 2, "Science", s4, "None", false, false);
 
+		missionList.Add (m);
+		m = new Mission("No! Not the Trees!", "It might just be a trick of the light, but it looks like the trees on that island are moving! They appear to be advancing towards a city. Maybe we could learn something by studying their biology.",
+						 "The figures turned out to indeed be a race of sentient trees. This planet is truly alien. Their technology was surprisingly advanced, and they shared some schematics with the crew. You could learn much from them.",
+						 "The figures were an army of warriors disguised as trees! They attacked our group and drove us back to the ship. Apparently, they were attempting to sack the city while it was unawares.",
+						 2, "Science", "Military", "Diplomacy", "Espionage", 40, 3, "Science", s5, "None", false, false);
 
 		//-----------------------------------------------Espionage--------------------------------------------------------------\\
 
