@@ -1,10 +1,11 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class missionMenus1 : MonoBehaviour {
 	public bool doWindow0 = false;
-	List<Mission> missionListMenu = new List<Mission> (); 
+	List<Mission> missionListMenu = new List<Mission> ();
 
 	void DoWindow0(int windowID) {
 		if (missionListMenu.Count == 0) {
@@ -69,6 +70,9 @@ public class missionMenus1 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Text guiText1 = GameObject.Find("DayCounter").GetComponent<Text>();
+		guiText1.text = "Day: " + Data.dayCounter;
+
 		Data.missionList = ShuffleList (Data.missionList);
 		for (int i = 0; i < Data.missionList.Count; i++) {
 			if (Data.missionList [i].isListed == false && Data.missionList [i].isDone == false) {

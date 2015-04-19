@@ -16,7 +16,7 @@ public class BatSelect : MonoBehaviour {
 	void OnMouseDown(){
 		int i;
 		for (i = 0; i < Data.currentChars.Count; i++) {
-			if (Data.currentChars [i].charName == "Margreet the Bat")
+			if (Data.currentChars[i].charName == "Margreet the Bat")
 				break;
 		}
 		

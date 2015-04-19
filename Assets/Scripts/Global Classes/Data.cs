@@ -194,7 +194,8 @@ public class Data : MonoBehaviour {
 						 2, "Diplomacy", "Espionage", "Military", "Science", 60, 2, "Espionage", d3, "None", false, false);
 
 		missionList.Add (m);
-		
+
+		dayCounter = 1;
 		//this allows it to persist (don't delete please)
 		DontDestroyOnLoad (transform.gameObject);
 	}
@@ -205,9 +206,10 @@ public class Data : MonoBehaviour {
 		List<Character> randomList = new List<Character>();
 		System.Random r = new System.Random();
 		int randomIndex = 0;
+
 		while (inputList.Count > 0)
 		{
-			randomIndex = r.Next(0, inputList.Count); //Choose a random object in the list
+			randomIndex = r.Next(0, inputList.Count - 1); //Choose a random object in the list
 			randomList.Add(inputList[randomIndex]); //add it to the new, random list
 			inputList.RemoveAt(randomIndex); //remove to avoid duplicates
 		}
