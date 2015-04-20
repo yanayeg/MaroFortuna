@@ -7,13 +7,13 @@ public class TriggeredEvent : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if(Data.dayCounter == 8){
+		if(Data.dayCounter == 6){
 			doWindowBadTrigger = true;
 			//we take away gold 
 			Data.diplomacyResCount -=10;
 		}
 
-		if (Data.dayCounter == 16) {
+		if (Data.dayCounter == 12) {
 			doWindowGoodTrigger = true;
 			//we add a fish 
 			Data.scienceResCount +=5;
