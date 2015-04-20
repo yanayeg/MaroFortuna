@@ -81,17 +81,21 @@ public class Data : MonoBehaviour {
 		//Military
 		Resource m1 = new Resource ("Raw Materials", "Military", 100);
 		Resource m2 = new Resource ("Metal", "Military", 100);
-		Resource m3 = new Resource ("2 Ships", "Military", 500);
+		Resource m3 = new Resource ("2 Ships", "Military", 100);
 		Resource m4 = new Resource ("Tactical Knowledge", "Military", 100);
-		Resource m5 = new Resource ("The loose change of war", "Military", 500);
-		Resource m6 = new Resource ("Gold Bars", "Military", 300);
+		Resource m5 = new Resource ("The loose change of war", "Military", 100);
+		Resource m6 = new Resource ("Gold Bars", "Military", 100);
+		Resource m7 = new Resource ("Mmmmm Prison Food!", "Military", 100);
+		Resource m8 = new Resource ("Fruity fruits", "Military", 100);
 
 		//Science
 		Resource s1 = new Resource ("Alien Technology", "Science", 100);
 		Resource s2 = new Resource ("Potions", "Science", 100);
 		Resource s3 = new Resource ("Chemical Knowledge", "Science", 100);
 		Resource s4 = new Resource ("Rock Samples", "Science", 100);
-		Resource s5 = new Resource ("Science Materials", "Science", 500);
+		Resource s5 = new Resource ("Science Materials", "Science", 100);
+		Resource s6 = new Resource ("Scientific Knowledge", "Science", 100);
+		Resource s7 = new Resource ("Yummy fruit!", "Science", 100);
 
 		//Espionage
 		Resource e1 = new Resource ("Cold hard cash", "Espionage", 100);
@@ -146,7 +150,21 @@ public class Data : MonoBehaviour {
 						 "The duel lasts the majority of the afternoon, neither combatant willing to give the other an inch. Striking surely and swiftly, your crew member smiles as the village's hero finally falls. The villagers shower your crew in gold and the deck of your ship is carpeted in roses.",
 						 "The local hero makes quick work of your crew member. Smirking, the hero watches as they slink back to your ship, defeated.",
 						 1, "Military", "Espionage", "Diplomacy", "Science", 40, 3, "Military", m6, "None", false, false);
-		missionList.Add (m);				 						 		
+		missionList.Add (m);
+
+		m = new Mission ("Live at Folsom Prison", "It has been a while since you've been able to stop and restock your supplies. As your ship sails onward an island is spotted in the distance. You use your spyglass to get a closer look. You see concrete towers and walls, a brutalistic monument to an era where laws were still enforced. Approaching the shore you notice smoke pouring into the sky and the decayed state of the infastructure. A man in an orange jumpsuit flags you down, but his disposition isn't the friendliest. You must arrange a party to meet him. 
+",
+						 "You send a party to parley with the man. Apparently, having spent years in the correctional facility has rehabilitated the island's residents. The former felons have formed a utopian society. After hosting a feast in your honor, the ex-cons wish you luck on your journey, and send you off with food for the journey ahead.",
+						 "Sadly, years spent languishing in the halls of justice has done little to change the residents of this island. Your party lands on the beach to meet with the man and are soon ambushed by his fellow felons. Your crewmates make quick work of the malnourished convicts, executing justice swiftly and exactly. Their debt to society finally paid, the criminals will make a decent meal for the crabs on the beach. Your crew returns to the ship with nothing but injuries from the battle.",
+						 2, "Military", "Diplomacy", "Espionage", "Science", 50, 1, "Military", m7, "None", false, false);
+		missionList.Add (m); 
+
+		m = new Mission ("Bucket Brigade", "As your ship nears the island, a pillar of black smoke begins billowing into the sky. Looking with your spyglass, you see that a large building has caught fire in a village near the beach. Panicked citizens can be seen running to an fro, athough a few villagers are carrying buckets of water from the sea in an attempt to douse the flames. Send some of your crew to help put out the fire, or at least help the villagers think of a way to keep it from spreading.",
+						 "Your crew works swiftly and efficiently. They help the villagers to quickly douse the blaze before it can spread. Grateful for your assistance, the villagers offer you the bounty from their recent harvest. Your holds are now laden with delicious fruit!",
+						 "Unfortunately, the fire quickly turns into a raging inferno. Despite the best efforts of your crew, the village is consumed by the blaze. The villagers thank you for your assistance, and weep at the thought of their lost possessions. You leave them to mourn and to being rebuilding.",
+						 2, "Military", "Science", "Espionage", "Diplomacy", 60, 2, "Military", m8, "None", false, false);
+
+		missionList.Add (m);				 						 				 						 		
 
 		//------------------------------------- SCIENCE MISSIONS -----------------------------------------------//
 		
@@ -182,6 +200,25 @@ public class Data : MonoBehaviour {
 						 "The figures turned out to indeed be a race of sentient trees. This planet is truly alien. Their technology was surprisingly advanced, and they shared some schematics with the crew. You could learn much from them.",
 						 "The figures were an army of warriors disguised as trees! They attacked our group and drove us back to the ship. Apparently, they were attempting to sack the city while it was unawares.",
 						 2, "Science", "Military", "Diplomacy", "Espionage", 40, 3, "Science", s5, "None", false, false);
+
+		missionList.Add (m);
+		m = new Mission("Buffalo buffalo buffalo", "The buffalo that live on one side of this island seem much more robust than those that live on the other side. As a result, they often bully the other buffalo. See if you can find out what makes them so much stronger. The information may prove useful in the future.",
+						"It turns out that their large size is due mainly to and earnest work ethic and clean living. That, and the abundance of growth hormones in the grass on their side of the island. You collect some samples of the grass.", 
+						"The larger buffalo buffalo your crew as well. After roughing them up and hanging their underwear from a flagpole, they allow your crew to return to the ship, defeated.",
+						3, "Science", "Military", "Espionage", "Diplomacy", 60, 2, "Science", s5, "None", false, false);
+
+		missionList.Add (m);
+		m = new Mission("Zombo Combo", "The island nearby seems to be embroiled in war. As you approach the beach, you receive a transmission asking for scientists to help cure the madness plaguing some citizens. Or perhaps someone to investigate the source of the problem.",
+						"After tracking down the source of the madness: a virus introduced into the town's water source, your crew and the town's scientists work feverishly to develop a cure. The town is saved, and your crew has gained much medical knowledge.",
+						"The madness seems to be transmissable through the air. The entire island seems to be overcome with insanity. Your crew manages to escape, but just barely.",
+						2, "Science", "Espionage", "Diplomacy", "Military", 40, 3, "Science", s6, "None", false, false);
+
+		missionList.Add (m);
+		m = new Mission("Gravity Well", "Your ship seems mysteriously drawn towards the island nearby. Preliminary readings reveal some sort of gravitational anomaly. Send some crew members to investigate the phenomenon.", 
+						"The island appears to be covered in ancient technology, some of which is causing fluctuations in gravity local to the area. Their technology is too advanced to possibly understand, but you collect some fruit from the many trees on the island.",
+						"Your crew investigates the island, but can find no apparent explanation for the fluctuations in gravity. Perhaps your mother crash-landed somewhere in the forest.",
+						1, "Science", "Espionage", "Military", "Diplomacy", 80, 1, "Science", s7, "None", false, false);
+
 
 		//-----------------------------------------------Espionage--------------------------------------------------------------\\
 
