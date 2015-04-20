@@ -257,9 +257,7 @@ public class Data : MonoBehaviour {
 						 1, "Espionage", "Military", "Diplomacy", "Science", 40, 3, "Espionage", e4, "None", false, false);
 
 		missionList.Add (m);
-		m = new Mission("The Fair's Fair Fare", "You hear an announcement on the nearby island that a science fair will be held at their kingdom's captial. There is sure to be some innovative machines there for showcase. By hook or by crook, getting some of those schematics would be invaluable.
-",
-						"Armed with only your wits, a pair of stage glasses, and a white coat, you sneak into the science fair and grab a few conveniently rolled-up blueprints. Your scientists will surely appreciate your efforts.",
+		m = new Mission("The Fair's Fair Fare", "You hear an announcement on the nearby island that a science fair will be held at their kingdom's captial. There is sure to be some innovative machines there for showcase. By hook or by crook, getting some of those schematics would be invaluable.", "Armed with only your wits, a pair of stage glasses, and a white coat, you sneak into the science fair and grab a few conveniently rolled-up blueprints. Your scientists will surely appreciate your efforts.",
 						"You rush into the science fair pavillion and grab some rolled-up papers, assuming them to be schematics of some sort. Unfortunately, when you get back to the ship, you realize they are just rolls of paper towels! Better luck next time.",
 						1, "Espionage", "Science", "Military", "Diplomacy", 60, 2, "Espionage", e5, "None", false, false);
 
@@ -276,9 +274,7 @@ public class Data : MonoBehaviour {
 						3, "Espionage", "Military", "Science", "Diplomacy", 40, 3, "Espionage", e7, "None", false, false);
 
 		missionList.Add(m);
-		m = new Mission("Playing Hooky", "The mayor of a city near the beach has come to the ship looking for assistance. Truancy is rampant at the local school. The majority of the police force is searching for the miscreants, but they need more help. Send a party to search for them.  
- Or help find a way to make school fun.",
- 						"Interrogating some less-than-savory parents, you manage to locate a few of their delinquent children. The mayor thanks you and pays you in textbooks. Knowledge is power!",
+		m = new Mission("Playing Hooky", "The mayor of a city near the beach has come to the ship looking for assistance. Truancy is rampant at the local school. The majority of the police force is searching for the miscreants, but they need more help. Send a party to search for them. Or help find a way to make school fun.", "Interrogating some less-than-savory parents, you manage to locate a few of their delinquent children. The mayor thanks you and pays you in textbooks. Knowledge is power!",
  						"You find out the children have been skipping school to organize a militia. You attempt to alert the mayor, but he just laughs in your face. School may soon be out forever.",
  						2, "Espionage", "Science", "Diplomacy", "Military", 60, 2, "Espionage", e8, "None", false, false);
 
