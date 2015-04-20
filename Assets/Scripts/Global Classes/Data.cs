@@ -116,7 +116,7 @@ public class Data : MonoBehaviour {
 		Resource d4 = new Resource ("Bountiful bounty", "Diplomacy", 100);
 		Resource d5 = new Resource ("Lumber", "Diplomacy", 100);
 		Resource d6 = new Resource ("Curency", "Diplomacy", 100);
-		Resource d7 = new Resource ("Gifts galore!", "Diplomacy" 100);
+		Resource d7 = new Resource ("Gifts galore!", "Diplomacy", 100);
 		Resource d8 = new Resource ("Swords and knives and other sharp things", "Diplomacy", 100);
 
 
@@ -301,8 +301,7 @@ public class Data : MonoBehaviour {
 						 2, "Diplomacy", "Espionage", "Military", "Science", 60, 2, "Diplomacy", d3, "None", false, false);
 
 		missionList.Add (m);
-		m = new Mission("A Tail of Two Kiddies", "It appears the two tribes on this island are preparing to go to war. Preliminary investigations reveal that one of the chieftain's sons has eloped to be with the other's daughter. Perhaps if you negotiate peace, they will reward us in some way. Or maybe it'd be better for everyone if the kids just... went away.
-", 
+		m = new Mission("A Tail of Two Kiddies", "It appears the two tribes on this island are preparing to go to war. Preliminary investigations reveal that one of the chieftain's sons has eloped to be with the other's daughter. Perhaps if you negotiate peace, they will reward us in some way. Or maybe it'd be better for everyone if the kids just... went away.", 
 						"That was pretty easy! After sitting down to think about it, both chieftains realized going to war over a couple of kids is pretty ridiculous. Each tribe shares some of their bounty with the crew!",
 						"The kids killed themselves before you could do anything. Both chieftains are too overcome with grief to negotiate with each other. The drums of war beat ever-louder...",
 						1, "Diplomacy", "Espionage", "Science", "Military", 80, 1, "Diplomacy", d4, "None", false, false);
