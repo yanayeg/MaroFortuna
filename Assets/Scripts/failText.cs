@@ -23,7 +23,9 @@ public class failText : MonoBehaviour {
 		}
 		
 		guiText2.text = names;
-		
+
+		if (Data.dayCounter % 2 == 0 && Data.dayCounter != 0)
+			Data.needCharacter = true;
 		
 		//at end of displaying messages clear activeMissionChars
 		Data.activeMissionChars.Clear ();

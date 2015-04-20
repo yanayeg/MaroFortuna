@@ -15,6 +15,7 @@ public class Data : MonoBehaviour {
 	public static int espionageResCount;
 	public static int diplomacyResCount;
 	public static int scienceResCount;
+	public static bool needCharacter;
 
 
 	void Awake(){
@@ -52,7 +53,7 @@ public class Data : MonoBehaviour {
 		                   "A master of disguise and dancing.", false);
 		currentChars.Add (c);
 		c = new Character ("Espionage", "Pierre the Parrot", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
-		                   "Pierre the pickpocketing parrot.", false);
+		                   "Pickpoketing extraordinaire.", false);
 		charList.Add (c);
 		c = new Character ("Espionage", "Roy the Boartender", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   "He hears a lot of gossip around the speakeasy.", false);
@@ -307,6 +308,7 @@ public class Data : MonoBehaviour {
 		scienceResCount = 0;
 		espionageResCount = 0;
 		diplomacyResCount = 0;
+		needCharacter = false;
 		//this allows it to persist (don't delete please)
 		DontDestroyOnLoad (transform.gameObject);
 	}
