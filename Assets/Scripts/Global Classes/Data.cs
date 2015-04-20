@@ -264,6 +264,10 @@ public class Data : MonoBehaviour {
 		missionList.Add (m);
 
 		dayCounter = 1;
+		militaryResCount = 0;
+		scienceResCount = 0;
+		espionageResCount = 0;
+		diplomacyResCount = 0;
 		//this allows it to persist (don't delete please)
 		DontDestroyOnLoad (transform.gameObject);
 	}
