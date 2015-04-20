@@ -30,10 +30,10 @@ public class Data : MonoBehaviour {
 		                  "Wrote important military tactics in his novel, “The Art of Roar.", false);
 		charList.Add(c);
 		c = new Character ("Military", "Artemis the Wolf", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
-		                   " ", false);
+		                   "Master of the bow and arrow.", false);
 		charList.Add (c);
 		c = new Character ("Military", "Zorro the Fox", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
-		                   " ", false);
+		                   "The ferocity of this fox will leave foes in fear of furnishing faux fur.", false);
 		charList.Add (c);
 		//SCIENCE CHARACTERS
 		c = new Character ("Science", "Mousie Curie", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
@@ -46,7 +46,7 @@ public class Data : MonoBehaviour {
 		                   "Mathematician and philisophist, most famous statement: If it fits, I sits.", false);
 		currentChars.Add (c);
 		c = new Character ("Science", "Olympia the Owl", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
-		                   " ", false);
+		                   "A healer of the many.", false);
 		charList.Add (c);
 		//ESPIONAGE CHARACTERS
 		c = new Character ("Espionage", "Margreet the Bat", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
@@ -59,7 +59,7 @@ public class Data : MonoBehaviour {
 		                   "He hears a lot of gossip around the speakeasy.", false);
 		charList.Add (c);
 		c = new Character ("Espionage", "Lucia the Crow", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
-		                   " ", false);
+		                   "A cunning crow that can get around anywhere.", false);
 		charList.Add (c);
 		//DIPLOMACY CHARACTERS
 		c = new Character ("Diplomacy", "Espresso the Dog", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
@@ -69,10 +69,10 @@ public class Data : MonoBehaviour {
 		                   "He just wants to talk things out over some good coffee.", false);
 		charList.Add (c);
 		c = new Character ("Diplomacy", "Eisenhower the Elk", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
-		                   " ", false);
+		                   "A fancy dancy elk.", false);
 		currentChars.Add (c);
 		c = new Character ("Diplomacy", "Masako the Monkey", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
-		                   " ", false);
+		                   "This monkey knows a tune that can make a girl swoon.", false);
 		charList.Add (c);
 		//shuffle list
 		charList = ShuffleList (charList);
@@ -334,7 +334,7 @@ public class Data : MonoBehaviour {
 						"After detailing an elaborate plan in which you hide in the bushes below his neighbor's window and feed him lines to win her heart. Thankful for your assistance, he gives you some weapons from his militia's armory.",
 						"Despite your best efforts, the young man is flustered and delivers your lines with poor timing and ends up running away.",
 						2, "Diplomacy", "Science", "Military", "Espionage", 40, 3, "Diplomacy", d8, "None", false, false);
-
+		missionList.Add (m);
 
 		dayCounter = 1;
 		militaryResCount = 0;
