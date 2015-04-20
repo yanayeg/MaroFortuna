@@ -16,6 +16,7 @@ public class ventureButtonWinCond : MonoBehaviour {
 			int maxSum = -1;
 			int type = 1; //1 =  military, 2 = science, 3 = espionage, 4 = diplomacy
 			if (resourceSum < 1000) {
+				Application.LoadLevel ("NoWin");
 			} else {
 				//you win
 				if (maxSum < Data.militaryResCount) {
