@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class failText : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
+		System.Threading.Thread.Sleep(600);
 		string fail = Data.pickedMission.failDesc;
 		Mission activeMission = Data.pickedMission;
 		Text guiText1 = GameObject.Find("FailText").GetComponent<Text>();
@@ -18,7 +19,8 @@ public class failText : MonoBehaviour {
 		Text guiText2 = GameObject.Find("SquadList").GetComponent<Text> ();
 		string names = "";
 		for (int i = 0; i<Data.activeMissionChars.Count; i++) {
-			names += Data.activeMissionChars [i].charName + " +0 XP \n";
+			Data.activeMissionChars [i].addExperience (100);
+			names += Data.activeMissionChars [i].charName + " +100 XP \n";
 			Data.activeMissionChars[i].setPicked();
 		}
 		

@@ -9,7 +9,7 @@ public class missionDescription : MonoBehaviour {
 		//select the description of the mission picked
 		string missionDesc = Data.pickedMission.description;
 		Text guiText = GameObject.Find("Description").GetComponent<Text>();
-		guiText.text = missionDesc;
+		guiText.text = Data.pickedMission.title + "\n" + missionDesc;
 
 		//at end of displaying messages clear isListed properties for missions 
 		foreach(Mission m in Data.missionList){
@@ -19,8 +19,9 @@ public class missionDescription : MonoBehaviour {
 
 
 
-
-		//GameObject.Find("EspionageBat").GetComponent<SpriteRenderer>().enabled = false;
+		for (int i = 0; i < Data.charList.Count; i++) {
+			GameObject.Find (Data.charList [i].charName).GetComponent<SpriteRenderer> ().color = Color.gray;
+		}
 
 
 

@@ -19,10 +19,10 @@ public class TriggeredEvent : MonoBehaviour {
 		if (Data.dayCounter == 12) {
 			doWindowGoodTrigger = true;
 			//we add a fish 
-			Data.scienceResCount +=100;
+			Data.militaryResCount +=100;
 		}
 
-		if (Data.dayCounter % 2 == 0 && Data.dayCounter != 0) {
+		if ((Data.dayCounter % 2 == 0 && Data.dayCounter != 0) && Data.charList.Count > 0) {
 			newCharacter = true;
 			if (Data.charList.Count > 0) {
 				rewardChar = Data.charList [0];
@@ -42,7 +42,7 @@ public class TriggeredEvent : MonoBehaviour {
 	}
 
 	void DoWindowBad(int windowID) {
-			GUILayout.Label("As you wake on the eigth day, you see that a large coffer of gold has disappeared from the holds below deck. Perhaps you should post guards to watch for pesky theives in the night...");
+			GUILayout.Label("As you wake on the sixth day, you see that a large coffer of gold has disappeared from the holds below deck. Perhaps you should post guards to watch for pesky theives in the night...");
 			if (GUI.Button (new Rect (20, 160, 200, 20), "Accept")) {
 				doWindowBadTrigger = false;
 			} 
@@ -57,13 +57,13 @@ public class TriggeredEvent : MonoBehaviour {
 
 	void OnGUI() {
 		//doWindow0 = GUI.Toggle(new Rect(10, 10, 100, 20), doWindow0, "Window 0");
-		if (doWindowBadTrigger) {
+		if (doWindowBadTrigger && !(Data.hitBack)) {
 			GUI.Window (0, new Rect (300, 100, 250, 200), DoWindowBad, "OH NO!");
 		}
-		if (doWindowGoodTrigger) {
+		if (doWindowGoodTrigger && !(Data.hitBack)) {
 			GUI.Window (0, new Rect (300, 100, 250, 200), DoWindowGood, "Awesome!");
 		}
-		if (newCharacter) {
+		if (newCharacter && !(Data.hitBack)) {
 			GUI.Window (0, new Rect (300, 100, 250, 200), CharacterWindow, "Welcome!");
 		}
 	}

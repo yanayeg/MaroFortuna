@@ -16,6 +16,8 @@ public class Data : MonoBehaviour {
 	public static int diplomacyResCount;
 	public static int scienceResCount;
 	public static bool needCharacter;
+	public static int adjustedDifficulty;
+	public static bool hitBack;
 
 
 	void Awake(){
@@ -27,7 +29,7 @@ public class Data : MonoBehaviour {
 		                   "Leader of the great tribes.", false);
 		currentChars.Add (c);
 		c = new Character ("Military", "Sun Tzu the Tiger", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
-		                  "Wrote important military tactics in his novel, “The Art of Roar.", false);
+		                   "Wrote important military tactics in his novel, 'The Art of Roar.'", false);
 		charList.Add(c);
 		c = new Character ("Military", "Artemis the Wolf", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   "Master of the bow and arrow.", false);
@@ -336,7 +338,9 @@ public class Data : MonoBehaviour {
 		scienceResCount = 0;
 		espionageResCount = 0;
 		diplomacyResCount = 0;
+		adjustedDifficulty = 0;
 		needCharacter = false;
+		hitBack = false;
 		//this allows it to persist (don't delete please)
 		DontDestroyOnLoad (transform.gameObject);
 	}

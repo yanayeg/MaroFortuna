@@ -47,43 +47,44 @@ public class Mission : MonoBehaviour{
 
 	}
 	public bool runMission(Mission mission, List<Character> charList){
-		double chance = 50;
+		double chance = 55;
 
 		System.Random r = new System.Random ();
 		int  adjustment1 = r.Next (0, 1);
 		int  adjustment2 = r.Next (1, 2);
-		int adjustedDiff = mission.difficulty;
+		Data.adjustedDifficulty = mission.difficulty;
 
 
 	//adjusting difficulty of missions based on daycounter
 
-		if (Data.dayCounter <= 5) {
+		if (Data.dayCounter <= 7) {
 			switch (mission.difficulty) {
 			case 1:
 				break;
 			case 2:
-				adjustedDiff = mission.difficulty - adjustment1;
+				Data.adjustedDifficulty = mission.difficulty - 1;
 				break;
 			case 3:
-				adjustedDiff = mission.difficulty - adjustment2;
+				Data.adjustedDifficulty = mission.difficulty - 2;
 				break;
 			}
 		} 
-		else if (Data.dayCounter <= 10) {
+		else if (Data.dayCounter <= 13) {
 				switch (mission.difficulty) {
 				case 1:
 					break;
 				case 2:
+					Data.adjustedDifficulty = mission.difficulty - adjustment1;
 					break;
 				case 3:
-					adjustedDiff = mission.difficulty - adjustment1;
+					Data.adjustedDifficulty = mission.difficulty - adjustment2;
 					break;
 				}
 		}
 
 		for (int i = 0; i < mission.squadSize; i++) {    
 
-			switch (adjustedDiff)
+			switch (Data.adjustedDifficulty)
 			{
 			case 1:
 				if (charList [i].experience > 1000)
@@ -116,7 +117,7 @@ public class Mission : MonoBehaviour{
 
 
 		}
-		Debug.Log ("AdjustedDiff = " + adjustedDiff + "\nActual = " + mission.difficulty);
+		Debug.Log ("AdjustedDiff = " + Data.adjustedDifficulty + "\nActual = " + mission.difficulty);
 		Debug.Log (chance);
 		if (chance >= 100)
 			return true;
