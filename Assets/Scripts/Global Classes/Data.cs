@@ -66,7 +66,7 @@ public class Data : MonoBehaviour {
 		                   "He just wants to talk things out over some good coffee.", false);
 		charList.Add (c);
 		c = new Character ("Diplomacy", "Octavia the Octopus", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
-		                   "He just wants to talk things out over some good coffee.", false);
+		                   "Tangles people up in contracts and paperwork.", false);
 		charList.Add (c);
 		c = new Character ("Diplomacy", "Eisenhower the Elk", Resources.Load ("/Portrait.png") as Sprite, 0, 1,
 		                   "A fancy dancy elk.", false);
@@ -84,7 +84,7 @@ public class Data : MonoBehaviour {
 		Resource m2 = new Resource ("Metal", "Military", 100);
 		Resource m3 = new Resource ("2 Ships", "Military", 100);
 		Resource m4 = new Resource ("Tactical Knowledge", "Military", 100);
-		Resource m5 = new Resource ("The loose change of war", "Military", 100);
+		Resource m5 = new Resource ("The loose hounds of war", "Military", 100);
 		Resource m6 = new Resource ("Gold Bars", "Military", 100);
 		Resource m7 = new Resource ("Mmmmm Prison Food!", "Military", 100);
 		Resource m8 = new Resource ("Fruity fruits", "Military", 100);

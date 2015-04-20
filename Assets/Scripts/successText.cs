@@ -70,9 +70,9 @@ public class successText : MonoBehaviour {
 				}
 			}
 			if(addChar)
-				guiText1.text = success + "\nRewards: " + Data.pickedMission.rewardRsc.rscName + "\nNew Character, " + rewardChar.charName +": "+ rewardChar.description;
+				guiText1.text = success + "\n \nRewards: " + Data.pickedMission.rewardRsc.rscName + "\n \nNew Character, " + rewardChar.charName +": "+ rewardChar.description;
 			else
-				guiText1.text = success + "\nRewards: " + Data.pickedMission.rewardRsc.rscName;
+				guiText1.text = success + "\n \nRewards: " + Data.pickedMission.rewardRsc.rscName;
 		
 
 			Text guiText2 = GameObject.Find ("SquadList").GetComponent<Text> ();
