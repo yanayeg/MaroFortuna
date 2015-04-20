@@ -10,13 +10,15 @@ public class TriggeredEvent : MonoBehaviour {
 		if(Data.dayCounter == 6){
 			doWindowBadTrigger = true;
 			//we take away gold 
-			Data.diplomacyResCount -=10;
+			if(Data.diplomacyResCount > 100){
+				Data.diplomacyResCount -=100;
+			}
 		}
 
 		if (Data.dayCounter == 12) {
 			doWindowGoodTrigger = true;
 			//we add a fish 
-			Data.scienceResCount +=5;
+			Data.scienceResCount +=100;
 		}
 	}
 
