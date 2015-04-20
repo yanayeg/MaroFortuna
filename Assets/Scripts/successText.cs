@@ -60,14 +60,17 @@ public class successText : MonoBehaviour {
 			//grant character if it's a third day and successful
 			//do rewardChar method
 			//if rewardChar isn't null fields alert the user about the new char
-			if (Data.dayCounter % 2 == 0 && Data.dayCounter != 0) {
-				addChar = true;
-				rewardChar = Data.charList[0];
-				Data.charList.RemoveAt(0);
-				Data.currentChars.Add (rewardChar);
+			if ((Data.dayCounter % 2 == 0 && Data.dayCounter != 0) || Data.needCharacter) {
+				Data.needCharacter = false;
+				if(Data.charList.Count > 0){
+					addChar = true;
+					rewardChar = Data.charList[0];
+					Data.charList.RemoveAt(0);
+					Data.currentChars.Add (rewardChar);
+				}
 			}
 			if(addChar)
-				guiText1.text = success + "\nRewards: " + Data.pickedMission.rewardRsc.rscName + "\nNew Character: " + rewardChar.charName;
+				guiText1.text = success + "\nRewards: " + Data.pickedMission.rewardRsc.rscName + "\nNew Character, " + rewardChar.charName +": "+ rewardChar.description;
 			else
 				guiText1.text = success + "\nRewards: " + Data.pickedMission.rewardRsc.rscName;
 		
@@ -75,7 +78,7 @@ public class successText : MonoBehaviour {
 			Text guiText2 = GameObject.Find ("SquadList").GetComponent<Text> ();
 			string names = "";
 			for (int i = 0; i<Data.activeMissionChars.Count; i++) {
-				names += Data.activeMissionChars [i].charName + " +100 XP \n";
+				names += Data.activeMissionChars [i].charName + " +500 XP \n";
 				Data.activeMissionChars [i].setPicked ();
 			}
 			guiText2.text = names;

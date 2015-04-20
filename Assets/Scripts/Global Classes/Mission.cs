@@ -48,52 +48,79 @@ public class Mission : MonoBehaviour{
 	}
 	public bool runMission(Mission mission, List<Character> charList){
 		double chance = 50;
-		/*
-		if (mission.difficulty == 1)
-			chance += 50;
-		if (mission.difficulty == 2)
-			chance += 35;
-		if (mission.difficulty == 3)
-			chance += 20;
-		*/
+
+		System.Random r = new System.Random ();
+		int  adjustment1 = r.Next (0, 1);
+		int  adjustment2 = r.Next (1, 2);
+		int adjustedDiff = mission.difficulty;
+
+
+	//adjusting difficulty of missions based on daycounter
+
+		if (Data.dayCounter <= 5) {
+			switch (mission.difficulty) {
+			case 1:
+				break;
+			case 2:
+				adjustedDiff = mission.difficulty - adjustment1;
+				break;
+			case 3:
+				adjustedDiff = mission.difficulty - adjustment2;
+				break;
+			}
+		} 
+		else if (Data.dayCounter <= 10) {
+				switch (mission.difficulty) {
+				case 1:
+					break;
+				case 2:
+					break;
+				case 3:
+					adjustedDiff = mission.difficulty - adjustment1;
+					break;
+				}
+		}
+
 		for (int i = 0; i < mission.squadSize; i++) {    
 
-			if (mission.difficulty == 1) {
+			switch (adjustedDiff)
+			{
+			case 1:
 				if (charList [i].experience > 1000)
 					chance += 33 / mission.squadSize;
 				else if (charList [i].experience > 500)
 					chance += 17 / mission.squadSize;
-			}
-
-			if (mission.difficulty == 2) {
+				break;
+			case 2:
 				if (charList [i].experience < 501)
 					chance -= 17 / mission.squadSize;
 				if (charList [i].experience > 1000)
 					chance += 17 / mission.squadSize;
-			}
-
-			if (mission.difficulty == 3) {
+				break;
+			case 3:
 				if (charList [i].experience < 501)
 					chance -= 33 / mission.squadSize;
 				else if (charList [i].experience < 1001)
 					chance -= 17 / mission.squadSize;
+				break;
 			}
+
 			if (charList [i].profession == mission.majorAd)
 				chance += 33 / mission.squadSize;
 			if (charList [i].profession == mission.minorAd)
 				chance += 17 / mission.squadSize;
 			if (charList [i].profession == mission.majorDis)
-				chance -= 33 / mission.squadSize;
+				chance -= 25 / mission.squadSize;
 			if (charList [i].profession == mission.minorDis)
-				chance -= 17 / mission.squadSize;
+				chance -= 12 / mission.squadSize;
 
 
 		}
+		Debug.Log ("AdjustedDiff = " + adjustedDiff + "\nActual = " + mission.difficulty);
 		Debug.Log (chance);
 		if (chance >= 100)
 			return true;
 		else {
-			System.Random r = new System.Random ();
 			int  randomNumber = r.Next (0, 100);
 			if (randomNumber <= chance)
 				return true;
