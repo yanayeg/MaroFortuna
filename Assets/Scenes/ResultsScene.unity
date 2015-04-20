@@ -98,6 +98,7 @@ GameObject:
   - 222: {fileID: 52475003}
   - 114: {fileID: 52475002}
   - 114: {fileID: 52475001}
+  - 114: {fileID: 52475005}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -144,8 +145,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 978117608}
-        m_MethodName: LoadScene
+      - m_Target: {fileID: 52475005}
+        m_MethodName: VentureLoadScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -203,6 +204,17 @@ RectTransform:
   m_AnchoredPosition: {x: -106, y: -214}
   m_SizeDelta: {x: 199, y: 60}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &52475005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 52475000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09ccd0debbfb49041bf3b4b71a4e962e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &151104610
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,7 +571,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 978117609}
-  - 114: {fileID: 978117608}
   - 114: {fileID: 978117607}
   m_Layer: 0
   m_Name: Scripts
@@ -577,17 +588,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03aa04dabb3ae3a478ed4b6c7b062abb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &978117608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 978117606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78ebefda79e8f471e825754066130da8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &978117609
