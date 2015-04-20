@@ -113,6 +113,11 @@ public class Data : MonoBehaviour {
 		Resource d1 = new Resource ("Flock of flavorful fish", "Diplomacy", 100);
 		Resource d2 = new Resource ("Gold", "Diplomacy", 100);
 		Resource d3 = new Resource ("Favor of the locals", "Diplomacy", 100);
+		Resource d4 = new Resource ("Bountiful bounty", "Diplomacy", 100);
+		Resource d5 = new Resource ("Lumber", "Diplomacy", 100);
+		Resource d6 = new Resource ("Curency", "Diplomacy", 100);
+		Resource d7 = new Resource ("Gifts galore!", "Diplomacy" 100);
+		Resource d8 = new Resource ("Swords and knives and other sharp things", "Diplomacy", 100);
 
 
 		//-----------------------------------MISSION CREATION SECTION--------------------------------------------//
@@ -299,9 +304,39 @@ public class Data : MonoBehaviour {
 		m = new Mission("It's All Greek to Me", "A sealed capsule is uncovered near an ancient ruin in the middle of a desert island. You manage to open it, and find only a slip of paper with the message \"ØƔʤϱϔҨ\" marked upon it. You must figure out what this means!", 
 						 "After sleuthing around various ruins, you find the same message encrypted into a wall on a neighboring island. With the help of the local villagers, you realize the message states \"we come in peace.\" The makers of the message are long gone, but the local villagers now trust you. Woo!",
 						 "You cannot figure out what the message says, no matter what you do. But it doesn't matter, because before you can guess that the message means \"stay away\" a ninja clan swoops out of nowhere and attacks! AH!", 
-						 2, "Diplomacy", "Espionage", "Military", "Science", 60, 2, "Espionage", d3, "None", false, false);
+						 2, "Diplomacy", "Espionage", "Military", "Science", 60, 2, "Diplomacy", d3, "None", false, false);
 
 		missionList.Add (m);
+		m = new Mission("A Tail of Two Kiddies", "It appears the two tribes on this island are preparing to go to war. Preliminary investigations reveal that one of the chieftain's sons has eloped to be with the other's daughter. Perhaps if you negotiate peace, they will reward us in some way. Or maybe it'd be better for everyone if the kids just... went away.
+", 
+						"That was pretty easy! After sitting down to think about it, both chieftains realized going to war over a couple of kids is pretty ridiculous. Each tribe shares some of their bounty with the crew!",
+						"The kids killed themselves before you could do anything. Both chieftains are too overcome with grief to negotiate with each other. The drums of war beat ever-louder...",
+						1, "Diplomacy", "Espionage", "Science", "Military", 80, 1, "Diplomacy", d4, "None", false, false);
+
+		missionList.Add (m);
+		m = new Mission("The Catfields & McKois", "A group of working-class fish, the McKois have gotten into an argument with a local lumber magnate, Pappy Catfield, over ownership of a pet hog. The fish patriarch has come to your ship, begging for you to act as a mediator to end the dispute before it gets violent.",
+						"After examining the hog, you discover a collar with a tag reading \"Henrietta McKoi.\" Clearly, the fish are in the right. They realize the Catfields have grown attached to the hog and agreed to let them see her Tuesdays, Thursdays, and every other weekend. The Catfields are overjoyed and reward you with some lumber.",
+						"The two families refuse to see the light of day. Both of them claimed to have written their name of either side of the hog, but it appears the marker washed off in a recent rainstorm. After attempting to get them to share custody of the hog, they begin fighting and the hog runs away.",
+						3, "Diplomacy", "Military", "Espionage", "Science", 40, 3, "Diplomacy", d5, "None", false, false);
+
+		missionList.Add (m);
+		m = new Mission("WILL You Help Out?", "As you land on the island, a messenger brings a missive to the ship. A noble has passed away recently and his family seeks an impartial party to execute his will. They promise a just reward for your service.",
+						"You read over his will and execute it to the letter. Reasonably, his wife and eldest son get the lion's share of his goods. While his younger children would wish for a larger inheritance, they accept your adjudication.",
+						"Each of his children attempted to bribe you to rule in their favor. Failing that, they hired thugs to force your hand. You managed to escape unscathed, but have received no recompense for your troubles.",
+						1, "Diplomacy", "Science", "Espionage", "Military", 60, 2, "Diplomacy", d6, "None", false, false);
+
+		missionList.Add (m);
+		m = new Mission("Green Vs Blue", "The residents of the nearby island are in love with the local horse races. They are so fanatic, in fact, that a recent upset at one of the races has led to widespread rioting in the capital. Their emperor has attempted to pass some laws in order to quell their rage, but he has decided to seek a powerful orator to calm the crowds. Alternately, perhaps the crowds would disperse if they were met with armed resistance...",
+						"After delivering a moving speech extolling the virtues of good sportsman and enjoying the game with your fellow citizens, you have successfully calmed the enraged citizens. Thankful for your assistance, the emperor lavishes you with gifts.",
+						"The citizens' love for horse racing truly runs deep! Your attempts to remind them, \"It's just a sport... It doesn't really matter,\" have just driven them into a frothing madness. You barely manage to escape their gibbering wrath.",
+						1, "Diplomacy", "Military", "Science", "Espionage", 60, 2, "Diplomacy", d7, "None", false, false);
+
+		missionList.Add (m);
+		m = new Mission("Foxanne", "A young officer from a local militia comes to the ship with an unusual request. He is desperate to win the heart of his neighbor, but fears that his skill for poetry isn't sufficient. His friends also lack a certain... je ne sais quoi. If you could help him win her heart, he would be forever greatful. After some prodding, he mentions that she's also a fan of nerdy types.",
+						"After detailing an elaborate plan in which you hide in the bushes below his neighbor's window and feed him lines to win her heart. Thankful for your assistance, he gives you some weapons from his militia's armory.",
+						"Despite your best efforts, the young man is flustered and delivers your lines with poor timing and ends up running away.",
+						2, "Diplomacy", "Science", "Military", "Espionage", 40, 3, "Diplomacy", d8, "None", false, false);
+
 
 		dayCounter = 1;
 		militaryResCount = 0;
