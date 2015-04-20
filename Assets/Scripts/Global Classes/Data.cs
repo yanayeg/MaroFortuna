@@ -101,6 +101,12 @@ public class Data : MonoBehaviour {
 		Resource e1 = new Resource ("Cold hard cash", "Espionage", 100);
 		Resource e2 = new Resource ("Fishing Secrets", "Espionage", 100);
 		Resource e3 = new Resource ("Miniture Mama Money", "Espionage", 100);
+		Resource e4 = new Resource ("Slightly sticky gold", "Espionage", 100);
+		Resource e5 = new Resource ("Blueprints", "Espionage", 100);
+		Resource e6 = new Resource ("Fistfuls of fruits and forrest nuts", "Espionage", 100);
+		Resource e7 = new Resource ("Got the goods", "Espionage", 100);
+		Resource e8 = new Resource ("Textbooks!", "Espionage", 100);
+
 
 		//Diplomacy
 		Resource d1 = new Resource ("Flock of flavorful fish", "Diplomacy", 100);
@@ -240,7 +246,40 @@ public class Data : MonoBehaviour {
 						 "Before you figure out the secret of the baby, it's too late. You realize the baby is a small SPY woman in disguise and she steals top secret information before she escapes!",
 						 2, "Espionage", "Diplomacy", "Science", "Military", 77, 1, "Espionage", e3, "None", false, false);
 
+		missionList.Add (m);
+		m = new Mission("Clamlet", "\"Clamlet... Clamlet...\" A ghost has appeared on the ship, calling out someone's name. He's pretty spooky with all that moaning! He wants someone to kill the king of that island nearby. Who cares why? Just do it and maybe he'll go away!",
+						 "You dispatch the king and manage to grab some gold and jewels from his bedchamber. Disappearing in a puff of green smoke, the ghost leaves more ectoplasm-covered gold on the deck of your ship. ",
+						 "You manage to infiltrate the castle, but stumble into the backstage of the king's theater. Unfortunately for you, an acting troupe is in the middle of a performance! Dragged onto the stage, you act your heart out, but receive only jeers and rotten tomatoes for your efforts.",
+						 1, "Espionage", "Military", "Diplomacy", "Science", 40, 3, "Espionage", e4, "None", false, false);
 
+		missionList.Add (m);
+		m = new Mission("The Fair's Fair Fare", "You hear an announcement on the nearby island that a science fair will be held at their kingdom's captial. There is sure to be some innovative machines there for showcase. By hook or by crook, getting some of those schematics would be invaluable.
+",
+						"Armed with only your wits, a pair of stage glasses, and a white coat, you sneak into the science fair and grab a few conveniently rolled-up blueprints. Your scientists will surely appreciate your efforts.",
+						"You rush into the science fair pavillion and grab some rolled-up papers, assuming them to be schematics of some sort. Unfortunately, when you get back to the ship, you realize they are just rolls of paper towels! Better luck next time.",
+						1, "Espionage", "Science", "Military", "Diplomacy", 60, 2, "Espionage", e5, "None", false, false);
+
+		missionList.Add (m);
+		m = new Mission("Dog Day Afternoon", "There's talk that the island's coffers are overflowing with food. Surely no one would mind if some of that food were to go missing?",
+						"The island's food supply is indeed plentiful. Their numerous trees are heavy with a bountiful harvest. Grabbing as many fruits and nuts as they can carry, your crew brings enough food to last a good while.",
+						"The island's food stores are laden with pizza! Searching for enough boxes to bring back an appreciable amount, your crew is discovered by some villagers! Managing to hide for the night in the attic of an abandoned home, they return empty-handed early the next day.",
+						2, "Espionage", "Diplomacy", "Science", "Military", 60, 2, "Espionage", e6, "None", false, false);
+
+		missionList.Add(m);
+		m = new Mission("The Caravan", "You see a caravan of trade goods that appears to be stopping for the night. It doesn't look like they have very many guards set to watch for potential trouble, and they are well-exposed, camped in the middle of an open field. Perhaps you could sneak into their camp and make off with some goodies.",
+						"With panache and a quick flash of steel, you manage to wrest some goods from the ill-defended caravan.",
+						"The caravan, while seeming well-defended from the beach, had more guards than you anticipated. Thievery might be common in this area.",
+						3, "Espionage", "Military", "Science", "Diplomacy", 40, 3, "Espionage", e7, "None", false, false);
+
+		missionList.Add(m);
+		m = new Mission("Playing Hooky", "The mayor of a city near the beach has come to the ship looking for assistance. Truancy is rampant at the local school. The majority of the police force is searching for the miscreants, but they need more help. Send a party to search for them.  
+ Or help find a way to make school fun.",
+ 						"Interrogating some less-than-savory parents, you manage to locate a few of their delinquent children. The mayor thanks you and pays you in textbooks. Knowledge is power!",
+ 						"You find out the children have been skipping school to organize a militia. You attempt to alert the mayor, but he just laughs in your face. School may soon be out forever.",
+ 						2, "Espionage", "Science", "Diplomacy", "Military", 60, 2, "Espionage", e8, "None", false, false);
+
+
+		
 		//-------------------------------------------------------Diplomacy---------------------------------------------// 
 
 		missionList.Add (m);
